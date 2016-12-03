@@ -12,11 +12,30 @@ tags: [codingpedia bookmarks, beginner, nodejs, expressjs, tutorial]
 MongoDB INstallation
 Go To Download Website
 
+First print a list of all databases on the server.
+
+``` bash
+show dbs
+```
+
+Then use the _codingpedia-bookmarks_ collection:
+
+``` bash
+> use codingpedia-bookmarks
+switched to db codingpedia-bookmarks
+```
+
+Then print a list of all collections for current database
+
+``` bash
+> use codingpedia-bookmarks
+switched to db codingpedia-bookmarks
+```
+
 Find all documents from collection
 
 ``` bash
 > db.bookmarks.find()
-
 ```
 
 Response
@@ -33,6 +52,63 @@ Response
 { "_id" : ObjectId("57f5dd573fed7e3677b20ca5"), "name" : "windows bookmark", "url" : "windows url", "description" : "some js description", "category" : "git", "tags" : [ "git command", "setup" ], "__v" : 0 }
 
 ```
+
+Create index for userId 
+```
+> db.bookmarks.createIndex( { userId: 1 } )
+```
+
+> (1 - is sort ascending); see doku for more information
+Doku:
+https://docs.mongodb.com/v3.2/reference/method/db.collection.createIndex/#db.collection.createIndex
+
+
+After that show the newly created index: 
+
+```
+> db.bookmarks.getIndexes()
+
+[
+        {
+                "v" : 1,
+                "key" : {
+                        "_id" : 1
+                },
+                "name" : "_id_",
+                "ns" : "codingpedia-bookmarks.bookmarks"
+        },
+        {
+                "v" : 1,
+                "unique" : true,
+                "key" : {
+                        "name" : 1
+                },
+                "name" : "name_1",
+                "ns" : "codingpedia-bookmarks.bookmarks",
+                "background" : true
+        },
+        {
+                "v" : 1,
+                "unique" : true,
+                "key" : {
+                        "location" : 1
+                },
+                "name" : "location_1",
+                "ns" : "codingpedia-bookmarks.bookmarks",
+                "background" : true
+        },
+        {
+                "v" : 1,
+                "key" : {
+                        "userId" : 1
+                },
+                "name" : "userId_1",
+                "ns" : "codingpedia-bookmarks.bookmarks"
+        }
+]
+```
+Doku:
+https://docs.mongodb.com/v3.2/tutorial/manage-indexes/
 
 Update Many
 
