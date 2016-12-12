@@ -186,7 +186,16 @@ Drop Index
 { "nIndexesWas" : 3, "ok" : 1 }
 ```
 
+Remove all documents from collection
+```bash
+> db.bookmarks.remove()
+```
 
-
+Remove with attributes (all but shared true):
+```bash
+> db.bookmarks.remove({shared:{$ne:true}})
+WriteResult({ "nRemoved" : 9 })
+```
+Documentation - https://docs.mongodb.com/v3.2/reference/method/db.collection.remove/
 
 ## References
