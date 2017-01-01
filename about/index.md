@@ -26,6 +26,9 @@ dsq_thread_id:
     <li>
       <a href="#Story">Story</a>
     </li>
+    <li>
+      <a href="#Sponsors">Sponsors</a>
+    </li>    
   </ul>
 </div>
 
@@ -64,6 +67,6 @@ We are currently supporting two websites:
 
 As most of the non-profits, we live from our members funds and energy and from donations. We would really appreciate a small contribution for our work - help us keep the servers running
 
-## Sponsors
+## <span id="Sponsors">Sponsors</span>
 
 Many thanks to JetBrains for providing us with an open-source license for [IntelliJ IDEA](https://www.jetbrains.com/idea/) which we use to maintain our open source projects
