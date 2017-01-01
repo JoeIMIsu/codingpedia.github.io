@@ -63,3 +63,7 @@ We are currently supporting two websites:
 </li>
 
 As most of the non-profits, we live from our members funds and energy and from donations. We would really appreciate a small contribution for our work - help us keep the servers running
+
+## Sponsors
+
+Many thanks to JetBrains for providing us with an open-source license for [IntelliJ IDEA](https://www.jetbrains.com/idea/) which we use to maintain our open source projects
