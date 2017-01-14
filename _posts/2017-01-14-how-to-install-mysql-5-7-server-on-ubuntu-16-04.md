@@ -10,7 +10,9 @@ tags: [mysql, ubuntu, setup]
 ---
 
 This is not the first time I need to install and configure a MySql Community Server on a fresh system with Ubuntu (16.04) running on it. So instead next time to have to
-google for the individual steps again, I decided to write a post.
+google for the individual steps again, I decided to write a post. Find out also how to tweak the Server configuration.
+
+<!--more-->
 
 ## Install MySQL Server
 This guide is based on the official MySQL documentation - [A Quick Guide to Using the MySQL APT Repository](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/), where my own data is used instead.
