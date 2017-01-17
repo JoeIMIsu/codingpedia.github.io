@@ -12,11 +12,83 @@ tags: [codingpedia bookmarks, beginner, nodejs, expressjs, tutorial]
 MongoDB INstallation
 Go To Download Website
 
+Quit the mongo consoel:
+``` bash
+> quit()
+```
+
+## User management
+
+https://docs.mongodb.com/v3.2/tutorial/enable-authentication/
+https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/
+
+
+Create mongo admin user:
+``` bash
+> use admin
+switched to db admin
+> db.createUser({user: "admin", pwd: "admin", roles:[{role: "userAdminAnyDatabase", db: "admin"}]})
+Successfully added user: {
+	"user" : "admin",
+	"roles" : [
+		{
+			"role" : "userAdminAnyDatabase",
+			"db" : "admin"
+		}
+	]
+}
+```
+
+https://docs.mongodb.com/manual/reference/built-in-roles/#userAdminAnyDatabase
+
+
+Create new user on "codingpedia-bookmarks"
+``` bash
+> db.dropUser("codingpedia")
+false
+> db.getUsers()
+[ ]
+> db.createUser({user: "codingpedia", pwd: "codingpedia", roles:[{role: "read", db: "user-data"}, {role:"readWrite", db: "codingpedia-bookmarks"}]})
+Successfully added user: {
+	"user" : "codingpedia",
+	"roles" : [
+		{
+			"role" : "read",
+			"db" : "user-data"
+		},
+		{
+			"role" : "readWrite",
+			"db" : "codingpedia-bookmarks"
+		}
+	]
+}
+> db.getUsers()
+[
+	{
+		"_id" : "codingpedia-bookmarks.codingpedia",
+		"user" : "codingpedia",
+		"db" : "codingpedia-bookmarks",
+		"roles" : [
+			{
+				"role" : "read",
+				"db" : "user-data"
+			},
+			{
+				"role" : "readWrite",
+				"db" : "codingpedia-bookmarks"
+			}
+		]
+	}
+]
+>
+```
+
 First print a list of all databases on the server.
 
 ``` bash
 show dbs
 ```
+
 
 Then use the _codingpedia-bookmarks_ collection:
 
@@ -28,8 +100,8 @@ switched to db codingpedia-bookmarks
 Then print a list of all collections for current database
 
 ``` bash
-> use codingpedia-bookmarks
-switched to db codingpedia-bookmarks
+> show collections
+bookmarks
 ```
 
 Find all documents from collection
@@ -53,7 +125,7 @@ Response
 
 ```
 
-Create index for userId 
+Create index for userId
 ```
 > db.bookmarks.createIndex( { userId: 1 } )
 ```
@@ -63,7 +135,7 @@ Doku:
 https://docs.mongodb.com/v3.2/reference/method/db.collection.createIndex/#db.collection.createIndex
 
 
-After that show the newly created index: 
+After that show the newly created index:
 
 ```
 > db.bookmarks.getIndexes()
