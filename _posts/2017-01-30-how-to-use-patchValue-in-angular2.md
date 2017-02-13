@@ -15,7 +15,7 @@ with an URL, the **title** field is being automatically filled in by scraping th
 
 In the end I present the struggle that led me to the solution.
 
-{% include source-code-codingpedia-bookmarks-frontend.html %}
+{% include source-code-codingpedia-bookmarks.html %}
 
 <!--more-->
 
@@ -323,6 +323,6 @@ this.bookmarkForm.controls['location'].valueChanges
 
 If you found this useful, please star it, share it and improve it:
 
-{% include source-code-codingpedia-bookmarks-frontend.html %}
+{% include source-code-codingpedia-bookmarks.html %}
 
 ## References
