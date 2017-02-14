@@ -87,8 +87,6 @@ tags:
 
 <!--more-->
 
-
-
 The basic Tiles dependency with only servlet support can be added this way:
 
 <div>
