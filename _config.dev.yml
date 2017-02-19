@@ -1,5 +1,5 @@
 title:            CodingpediaOrg
-description:      bookmarks.codingpedia.org
+description:      Sharing coding knowledge
 # put your disqus here
 disqus_shortname:  codingpedia
 reading_time:     true # if true, shows the estimated reading time for a post
@@ -15,8 +15,8 @@ url: http://localhost:4000
 #   To create sub categories. add a submenu item
 # See the example
 menu:
-  - title: 'Home'
-    url: '/'
+  - title: 'Bookmarks'
+    url: 'https://bookmarks.codingpedia.org/'
   - title: 'About'
     url: '/about/'
   - title: 'Tags'
