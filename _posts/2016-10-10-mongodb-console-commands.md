@@ -125,6 +125,15 @@ Response
 
 ```
 
+Sort documents by updatedAt Date (ascending and descending):
+docs - https://docs.mongodb.com/manual/reference/method/cursor.sort/
+
+``` bash
+> db.bookmarks.find().sort({updatedAt:1});
+> db.bookmarks.find().sort({updatedAt:-1});
+```
+
+
 Create index for userId
 ```
 > db.bookmarks.createIndex( { userId: 1 } )
