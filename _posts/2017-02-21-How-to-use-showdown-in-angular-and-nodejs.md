@@ -10,7 +10,8 @@ tags: [coding bookmarks, angular, nodejs, showdown, markdown]
 ---
 
 When I manage my coding bookmarks via [bookmarks.codingpedia.org](https://bookmarks.codingpedia.org/), I often have the need to place in bookmark's note either a code snippet (might be a command),
-or add some ordered or unordered list - perfect match for using Markdown[^1]. This post is all about how I enabled Markdown support with the help of ShodownJS[^2], both in front end (developed with Angular[^3]) and in backend, developed with NodeJS[^4].
+or add some list or add links and emphasize words - this sounds like a perfect match for using Markdown[^1]. This post is all about how I enabled Markdown support with the help of ShodownJS[^2],
+ both in front end (developed with Angular[^3]) and in backend, developed with NodeJS[^4].
 
 [^1]: <https://daringfireball.net/projects/markdown/>
 [^2]: <https://github.com/showdownjs/showdown>
@@ -26,9 +27,10 @@ So what it Showdown? Well according to the its authors "showdown is a Javascript
 
 ## How to use it Angular?
 
+I use showdown in front end when I create a new bookmark or I update one. The notes written in Markdown are transformed in html and persisted in the database. I thought it would not be performant to just persist the markdown code
+ and generate html on the fly.
 
-Well initially I did not need to use in front-end, because I would transform it in backend (see next section), but then I realized that the Bookmarkstores don't get updated rightfully..*[]:
-
+First thing is to add the proper dependencies `@types/showdown` and `showdown` and `npm install` them
 
 ```js
   "dependencies": {
@@ -52,7 +54,9 @@ Well initially I did not need to use in front-end, because I would transform it 
   },
 ```
 
-import `showdown/dist/showdown.js` in _vendor.ts_
+I am building the application with Webpack 2.x[^5], so I need to import `showdown/dist/showdown.js` in the _vendor.ts_ file:
+
+[^5]: <https://webpack.github.io/>
 
 ```typescript
 // Angular 2
@@ -73,7 +77,7 @@ import "keycloak-js/dist/keycloak.js";
 import "showdown/dist/showdown.js";
 ```
 
-Require
+Now the library is ready to be used in code. Require the showdown module and then create a `converter`:
 
 ```typescript
 import {Component, OnInit} from "@angular/core";
@@ -88,7 +92,7 @@ const showdown = require('showdown');
 const converter = new showdown.Converter();
 ```
 
-And then call the `makeHthml` method of the `convertor` :
+and finally call the `makeHthml` method of the `converter`, before the bookmark is created and persisted:
 
 ```typescript
   saveBookmark(model: Bookmark) {
@@ -110,10 +114,79 @@ And then call the `makeHthml` method of the `convertor` :
   }
 ```
 
-> Same is valid for update bookamrk. See this git commit where the deltas are highlighted ..*[]:
+> I use the same approach when I update a bookmark. Just generate new html from the description and persist it.
 
 ## How to use Showdown in NodeJS?
 
+At this point, there isn't much of a need to use showdown in the back-end, but I kept it for two reasons:
+
+1. if I do an API call where only the description in markdown is present (might be a machine to machine call), then I have to generate the html in the backend
+2. I get to write about how to do it in this post, maybe I or somebody else will need it later
+
+Similar to front-end, add the `showdown` dependency in `package.json` and then `npm install` it:
+
+```javascript
+{
+  "name": "bookmarks-api.codingpedia.org",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cheerio": "latest",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "keycloak-connect": "^2.5.0",
+    "mongoose": "~4.3.7",
+    "mongoose-unique-validator": "1.0.2",
+    "morgan": "~1.7.0",
+    "request": "latest",
+    "serve-favicon": "~2.3.0",
+    "showdown": "^1.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.2"
+  }
+}
+```
+
+then require the `showdown` module and create a `converter`:
+
+```javascript
+var showdown  = require('showdown'),
+  converter = new showdown.Converter();
+```
+
+and finally use the `makeHtml` method of the  `converter` in the `post` and `put` routes:
+
+```javascript
+router.post('/:id/bookmarks', keycloak.protect(), function(req, res, next){
+  var descriptionHtml = req.body.descriptionHtml ? req.body.descriptionHtml: converter.makeHtml(req.body.description);
+
+  .............
+
+});
+
+...............
+
+router.put('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req, res, next) {
+  if(!req.body.descriptionHtml){
+    req.body.descriptionHtml = converter.makeHtml(req.body.description);
+  }
+
+  Bookmark.findOneAndUpdate({_id: req.params.bookmarkId, userId: req.params.userId}, req.body, {new: true}, function(err, bookmark){
+  .............
+  });
+
+});
+```
+
+
+Works like a charm.
 
 If you found this useful, please star it, share it and improve it:
 
