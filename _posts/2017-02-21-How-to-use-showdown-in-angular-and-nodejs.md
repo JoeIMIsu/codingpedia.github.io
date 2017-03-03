@@ -4,14 +4,12 @@ title: How to use Showdown in Angular and NodeJS
 description: "This post shows how to dynamically fill in data in a reactive form field, based on other field's data"
 author: ama
 permalink: /ama/how-to-use-shodwon-in-angular-and-nodejs
-published: false
+published: true
 categories: [angular, nodejs]
 tags: [coding bookmarks, angular, nodejs, showdown, markdown]
 ---
 
-When I manage my coding bookmarks via [bookmarks.codingpedia.org](https://bookmarks.codingpedia.org/), I often have the need to place in bookmark's note either a code snippet (might be a command),
-or add some list or add links and emphasize words - this sounds like a perfect match for using Markdown[^1]. This post is all about how I enabled Markdown support with the help of ShodownJS[^2],
- both in front end (developed with Angular[^3]) and in backend, developed with NodeJS[^4].
+When managing my coding bookmarks via [bookmarks.codingpedia.org](https://bookmarks.codingpedia.org/), I often have the need to place in the bookmark's description either a code snippet (might be a command), add a list or add links and emphasize words - this seems like a perfect match for Markdown[^1]. In this post I will demonstrate how I enabled Markdown support with the help of ShodownJS[^2], both in front end (developed with Angular[^3]) and in backend, developed with NodeJS[^4].
 
 [^1]: <https://daringfireball.net/projects/markdown/>
 [^2]: <https://github.com/showdownjs/showdown>
@@ -23,14 +21,16 @@ or add some list or add links and emphasize words - this sounds like a perfect m
 <!--more-->
 
 ## What is Showdown?
-So what it Showdown? Well according to the its authors "showdown is a Javascript Markdown to HTML converter, based on the original works by John Gruber. Showdown can be used client side (in the browser) or server side (with NodeJs)."[^1]
+So what it Showdown? Well, according to the its authors "showdown is a Javascript Markdown to HTML converter, based on the original works by John Gruber. Showdown can be used client side (in the browser) or server side (with NodeJs)."[^1]
 
-## How to use it Angular?
+## How to use Showdown in Angular?
 
-I use showdown in front end when I create a new bookmark or I update one. The notes written in Markdown are transformed in html and persisted in the database. I thought it would not be performant to just persist the markdown code
+I use showdown in front end everytime I create a new bookmark or I update one. The notes written in Markdown are transformed in html and persisted in the database. I thought it would be more performant than just to persist the markdown code
  and generate html on the fly.
 
-First thing is to add the proper dependencies `@types/showdown` and `showdown` and `npm install` them
+### Showdown dependencies
+
+First thing is to add the proper dependencies `@types/showdown` and `showdown` in `package.json`:
 
 ```js
   "dependencies": {
@@ -53,6 +53,10 @@ First thing is to add the proper dependencies `@types/showdown` and `showdown` a
     "zone.js": "^0.7.2"
   },
 ```
+
+Then  and `npm install` and you're ready to go.
+
+### Code setup
 
 I am building the application with Webpack 2.x[^5], so I need to import `showdown/dist/showdown.js` in the _vendor.ts_ file:
 
@@ -77,7 +81,7 @@ import "keycloak-js/dist/keycloak.js";
 import "showdown/dist/showdown.js";
 ```
 
-Now the library is ready to be used in code. Require the showdown module and then create a `converter`:
+Now the library is ready to be used in code. Require the `showdown` module, then create a  showdown `converter`
 
 ```typescript
 import {Component, OnInit} from "@angular/core";
@@ -92,7 +96,7 @@ const showdown = require('showdown');
 const converter = new showdown.Converter();
 ```
 
-and finally call the `makeHthml` method of the `converter`, before the bookmark is created and persisted:
+and finally call the `makeHthml` method on the `converter`, before the bookmark is created and persisted:
 
 ```typescript
   saveBookmark(model: Bookmark) {
@@ -120,8 +124,8 @@ and finally call the `makeHthml` method of the `converter`, before the bookmark 
 
 At this point, there isn't much of a need to use showdown in the back-end, but I kept it for two reasons:
 
-1. if I do an API call where only the description in markdown is present (might be a machine to machine call), then I have to generate the html in the backend
-2. I get to write about how to do it in this post, maybe I or somebody else will need it later
+1. there might be cases when the descriptionHtml not present is, like API calls 
+2. I get to write about how to do it in this post, maybe I'll still need it later
 
 Similar to front-end, add the `showdown` dependency in `package.json` and then `npm install` it:
 
@@ -154,7 +158,7 @@ Similar to front-end, add the `showdown` dependency in `package.json` and then `
 }
 ```
 
-then require the `showdown` module and create a `converter`:
+Then require the `showdown` module and create a showdown `converter`:
 
 ```javascript
 var showdown  = require('showdown'),
@@ -184,7 +188,6 @@ router.put('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req, r
 
 });
 ```
-
 
 Works like a charm.
 
