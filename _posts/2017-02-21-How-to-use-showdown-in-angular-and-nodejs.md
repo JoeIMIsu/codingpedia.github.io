@@ -3,7 +3,7 @@ layout: post
 title: How to use Showdown in Angular and NodeJS
 description: "This post shows how to dynamically fill in data in a reactive form field, based on other field's data"
 author: ama
-permalink: /ama/how-to-use-shodwon-in-angular-and-nodejs
+permalink: /ama/how-to-use-shodown-in-angular-and-nodejs
 published: true
 categories: [angular, nodejs]
 tags: [coding bookmarks, angular, nodejs, showdown, markdown]
@@ -124,7 +124,7 @@ and finally call the `makeHthml` method on the `converter`, before the bookmark 
 
 At this point, there isn't much of a need to use showdown in the back-end, but I kept it for two reasons:
 
-1. there might be cases when the descriptionHtml not present is, like API calls 
+1. there might be cases when the descriptionHtml not present is, like API calls
 2. I get to write about how to do it in this post, maybe I'll still need it later
 
 Similar to front-end, add the `showdown` dependency in `package.json` and then `npm install` it:
