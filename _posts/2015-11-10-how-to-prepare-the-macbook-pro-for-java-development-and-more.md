@@ -380,7 +380,7 @@ v4.2.2</pre>
 Basically need to add MySQL to the PATH variable. Edit the _/~.bash_profile_ with the following:
 
 <pre class="lang:default decode:true">export MYSQL_HOME=/usr/local/bin/mysql
-export PATH=$M2:$MYSQL_HOME/bin</pre>
+export PATH=$PATH:$MYSQL_HOME/bin</pre>
 
 To test that it&#8217;s working start a new terminal and verify mysql version from command line:
 
@@ -456,6 +456,10 @@ export PATH=$M2:$MYSQL_HOME/bin
 alias rmcon='ssh ama@x.y.z.q'</pre>
 
 <pre class="lang:default decode:true">source ~/.bash_profile</pre>
+
+> I can't stress enough, how much comfortable your life can become, if you are using aliases the right way - [A developer's guide to using aliases](http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Emlc7mkZDQ4" frameborder="0" allowfullscreen></iframe>
 
 #### <span id="Commands">Commands</span>
 
