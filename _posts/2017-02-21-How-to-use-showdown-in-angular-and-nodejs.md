@@ -81,7 +81,7 @@ import "keycloak-js/dist/keycloak.js";
 import "showdown/dist/showdown.js";
 ```
 
-Now the library is ready to be used in code. Require the `showdown` module, then create a  showdown `converter`
+Now the library is ready to be used in code. First require the `showdown` module, then create a  showdown `converter`
 
 ```typescript
 import {Component, OnInit} from "@angular/core";
