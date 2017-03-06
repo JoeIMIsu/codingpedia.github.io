@@ -291,7 +291,7 @@ nginxconfigbackup(){
 ### Npm - https://www.npmjs.com/
 ```
 #npm
-alias npmi="npm install" 
+alias npmi="npm install"
 alias npmig="npm install -g" # -g install globally
 ```
 
@@ -323,6 +323,10 @@ alias tomcat-show-log="tail -f /opt/tomcat/logs/catalina.out"
 alias tomcat-backup="cp /opt/tomcat/webapps/ROOT.war \"$HOME/podcastpedia/ROOT.war.backup.$(date +%F_%R)\""
 alias tomcat-remove-root="rm -rf /opt/tomcat/webapps/ROOT*"
 ```
+
+## Video introduction to the concept
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Emlc7mkZDQ4" frameborder="0" allowfullscreen></iframe>
 
 ## Conclusion
 
