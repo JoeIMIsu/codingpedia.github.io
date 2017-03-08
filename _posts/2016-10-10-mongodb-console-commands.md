@@ -1,92 +1,56 @@
 ---
 layout: post
-title: First REST operation with Express
+title: Practical MongoDB shell commands
 description: "In this one I will try to implement a simple GET method that will deliver mocked bookmarks."
 author: ama
-permalink: /ama/first-rest-operation-with-express
+permalink: /ama/practical-mongodb-console-commands
 published: false
-categories: [nodejs]
-tags: [codingpedia bookmarks, beginner, nodejs, expressjs, tutorial]
+categories: [mongodb]
+tags: [codingpedia bookmarks, mongodb]
 ---
 
-MongoDB INstallation
-Go To Download Website
+The bookmarks from [bookmarks.codingpedia.org](https://bookmarks.codingpedia.org/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/), currently version 3.2. Very often I find myself needing to modify something in the
+ in the database, and the experience has taught me that doing it via the shell is one the best ways and it brings you sort of closer to the system. So, in this blog post I will list some of the console commands I use in MongoDB, as a reminder for later
+  and maybe somebody else can take advantage of it.
 
-Quit the mongo consoel:
+  {% include source-code-codingpedia-bookmarks.html %}
+
+> As a prerequisite you should have a Mongo Server instance running.
+
+<!--more-->
+
+## Start the mongo shell
+
+To start the mongo shell and connect to the MongoDB instance running on localhost with default port, change to the MongoDB installation directory:
+
+``` bash
+> cd <mongodb installation dir>
+
+```
+
+and then type `./bin/mongo` to start mongo
+
+> If you are like me, and hooked on aliases[^1], you might use something like `alias mongo-client-start='~/dev/mongodb/bin/mongo'`. You can also add <mongodb installation dir>/bin` to the `PATH environment variable and then you can just type `mongo
+
+[^1]: <http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/>
+
+## Quit the mongo shell
+
 ``` bash
 > quit()
 ```
 
-## User management
+## Working with mongo shell
 
-https://docs.mongodb.com/v3.2/tutorial/enable-authentication/
-https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/
+### Display database and collections
 
-
-Create mongo admin user:
-``` bash
-> use admin
-switched to db admin
-> db.createUser({user: "admin", pwd: "admin", roles:[{role: "userAdminAnyDatabase", db: "admin"}]})
-Successfully added user: {
-	"user" : "admin",
-	"roles" : [
-		{
-			"role" : "userAdminAnyDatabase",
-			"db" : "admin"
-		}
-	]
-}
-```
-
-https://docs.mongodb.com/manual/reference/built-in-roles/#userAdminAnyDatabase
-
-
-Create new user on "codingpedia-bookmarks"
-``` bash
-> db.dropUser("codingpedia")
-false
-> db.getUsers()
-[ ]
-> db.createUser({user: "codingpedia", pwd: "codingpedia", roles:[{role: "read", db: "user-data"}, {role:"readWrite", db: "codingpedia-bookmarks"}]})
-Successfully added user: {
-	"user" : "codingpedia",
-	"roles" : [
-		{
-			"role" : "read",
-			"db" : "user-data"
-		},
-		{
-			"role" : "readWrite",
-			"db" : "codingpedia-bookmarks"
-		}
-	]
-}
-> db.getUsers()
-[
-	{
-		"_id" : "codingpedia-bookmarks.codingpedia",
-		"user" : "codingpedia",
-		"db" : "codingpedia-bookmarks",
-		"roles" : [
-			{
-				"role" : "read",
-				"db" : "user-data"
-			},
-			{
-				"role" : "readWrite",
-				"db" : "codingpedia-bookmarks"
-			}
-		]
-	}
-]
->
-```
-
-First print a list of all databases on the server.
+First print a list of all available databases on the server via `show dbs`:
 
 ``` bash
-show dbs
+> show dbs
+admin                  0.000GB
+codingpedia-bookmarks  0.000GB
+local                  0.000GB
 ```
 
 
@@ -103,6 +67,8 @@ Then print a list of all collections for current database
 > show collections
 bookmarks
 ```
+
+### Find documents in collection
 
 Find all documents from collection
 
@@ -124,6 +90,8 @@ Response
 { "_id" : ObjectId("57f5dd573fed7e3677b20ca5"), "name" : "windows bookmark", "url" : "windows url", "description" : "some js description", "category" : "git", "tags" : [ "git command", "setup" ], "__v" : 0 }
 
 ```
+
+#### Sorting
 
 Sort documents by updatedAt Date (ascending and descending):
 docs - https://docs.mongodb.com/manual/reference/method/cursor.sort/
@@ -278,5 +246,101 @@ Remove with attributes (all but shared true):
 WriteResult({ "nRemoved" : 9 })
 ```
 Documentation - https://docs.mongodb.com/v3.2/reference/method/db.collection.remove/
+
+## User management
+
+https://docs.mongodb.com/v3.2/tutorial/enable-authentication/
+https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/
+
+Create mongo admin user:
+``` bash
+> use admin
+switched to db admin
+> db.createUser({user: "admin", pwd: "admin", roles:[{role: "userAdminAnyDatabase", db: "admin"}]})
+Successfully added user: {
+	"user" : "admin",
+	"roles" : [
+		{
+			"role" : "userAdminAnyDatabase",
+			"db" : "admin"
+		}
+	]
+}
+```
+
+https://docs.mongodb.com/manual/reference/built-in-roles/#userAdminAnyDatabase
+
+
+Create new user on "codingpedia-bookmarks"
+``` bash
+> db.dropUser("codingpedia")
+false
+> db.getUsers()
+[ ]
+> db.createUser({user: "codingpedia", pwd: "codingpedia", roles:[{role: "read", db: "user-data"}, {role:"readWrite", db: "codingpedia-bookmarks"}]})
+Successfully added user: {
+	"user" : "codingpedia",
+	"roles" : [
+		{
+			"role" : "read",
+			"db" : "user-data"
+		},
+		{
+			"role" : "readWrite",
+			"db" : "codingpedia-bookmarks"
+		}
+	]
+}
+> db.getUsers()
+[
+	{
+		"_id" : "codingpedia-bookmarks.codingpedia",
+		"user" : "codingpedia",
+		"db" : "codingpedia-bookmarks",
+		"roles" : [
+			{
+				"role" : "read",
+				"db" : "user-data"
+			},
+			{
+				"role" : "readWrite",
+				"db" : "codingpedia-bookmarks"
+			}
+		]
+	}
+]
+>
+```
+
+https://docs.mongodb.com/manual/reference/command/connectionStatus/
+
+## Show current user
+
+Use the `connectionStatus`[^1] method to return information about the current connection, specifically the state of the authenticated users and their available permisssions:
+
+[^1]: <https://docs.mongodb.com/manual/reference/command/connectionStatus/>
+
+```
+> db.runCommand({connectionStatus : 1})
+{
+	"authInfo" : {
+		"authenticatedUsers" : [
+			{
+				"user" : "mongo-admin",
+				"db" : "admin"
+			}
+		],
+		"authenticatedUserRoles" : [
+			{
+				"role" : "userAdminAnyDatabase",
+				"db" : "admin"
+			}
+		]
+	},
+	"ok" : 1
+}
+```
+
+
 
 ## References
