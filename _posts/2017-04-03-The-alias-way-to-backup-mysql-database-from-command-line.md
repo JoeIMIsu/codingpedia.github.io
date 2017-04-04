@@ -10,7 +10,7 @@ tags: [mysql, bash, linux]
 ---
 
 As I have told you [before](http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/), I am really hooked on bash aliases[^2].
- This blog emphasizes this point and shows how to make a MySql database backup via `mysqldump` with only three words, even with three letters, if you may like.
+ This blog entry emphasizes that point and presents how to make a MySql database backup via `mysqldump` with only three words, even with three letters, if you will.
 
 [^1]: <http://tldp.org/LDP/abs/html/aliases.html>
 [^2]: <http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/>
@@ -23,7 +23,7 @@ $ alias mysql-backup-db_name='mysqldump db_name -u db_user -p -h 127.0.0.1 --por
 $ mysql-backup-db_name
 ```
 
-or, same result with three letters, if you'd like:
+or, same with three letters:
 
 ```
 
@@ -35,7 +35,7 @@ $ mbd
 
 The option `-u`, will ask you for the password. The port number is not mandatory (as it defaults to **3306**), but if you are using other port, you need to specify it.
 
-> I personally prefer the longer alias-approach, as the name is more clear, **there is auto complete**. Besides that I can always `alias-grep` it[^1] - (`alias alias-grep='alias | grep'`),
+> I personally prefer the whole name approach, as then it is more clear to me. I can start typing `mysql-` and then **there is auto complete**. Besides that I can always `alias-grep` it[^1] - (`alias alias-grep='alias | grep'`),
  if I need to see how it looks like - using the alias in this case as sort of documentation...
 
 Below there is a concrete example, where I backup the MySQL keycloak database:
