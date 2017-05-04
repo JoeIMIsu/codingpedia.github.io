@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast, faster, Angular CLI - how I converted my Angular project to use Angular CLI
-description: "Main steps to migrate regular Angular project built with Webpack to Angular CLI project.
+description: "Main steps to migrate a regular Angular project built with Webpack to a Angular CLI project.
 My test candidate was the codingmarks.org project "
 author: ama
 permalink: /ama/fast-faster-angular-cli-how-i-converted-my-angular-project-to-use-angular-cli
