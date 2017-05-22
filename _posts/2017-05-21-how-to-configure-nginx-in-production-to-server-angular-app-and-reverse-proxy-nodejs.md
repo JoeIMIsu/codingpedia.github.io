@@ -28,7 +28,7 @@ We use it in the #codingmarks project as web server to serve static files and as
 
 The server we are setting up Nginx for, is an Ubuntu 16.04.1 LTS:
 
-```
+```bash
 $ lsb_release -a
 No LSB modules are available.
 Distributor ID:	Ubuntu
