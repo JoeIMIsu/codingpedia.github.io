@@ -11,6 +11,7 @@ tags: [codingmarks, nginx, ssl, tls, cerbot, keycloak, nodejs]
 ---
 
 In this guide we are going to:
+
 * install the latest NGINX version in Ubuntu 16.04.1
 * understand configuration files
 * generate SSL certificates and configure them in NGINX
