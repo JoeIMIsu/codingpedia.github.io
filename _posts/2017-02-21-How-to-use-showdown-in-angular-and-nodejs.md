@@ -6,7 +6,7 @@ author: ama
 permalink: /ama/how-to-use-shodown-in-angular-and-nodejs
 published: true
 categories: [angular, nodejs]
-tags: [coding bookmarks, angular, nodejs, showdown, markdown]
+tags: [codingmarks, coding bookmarks, angular, nodejs, showdown, markdown]
 ---
 
 When managing my coding bookmarks via [bookmarks.codingpedia.org](https://bookmarks.codingpedia.org/), I often have the need to place in the bookmark's description either a code snippet (might be a command), add a list or add links and emphasize words - this seems like a perfect match for Markdown[^1]. In this post I will demonstrate how I enabled Markdown support with the help of ShodownJS[^2], both in front end (developed with Angular[^3]) and in backend, developed with NodeJS[^4].

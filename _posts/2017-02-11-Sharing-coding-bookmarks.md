@@ -6,7 +6,7 @@ author: ama
 permalink: /ama/sharing-coding-bookmarks
 published: true
 categories: [codingpedia]
-tags: [coding bookmarks]
+tags: [codingmarks, coding bookmarks]
 image:
   feature: 2017-02-11-coding-bookmarks-post-feature-image.png
 ---
