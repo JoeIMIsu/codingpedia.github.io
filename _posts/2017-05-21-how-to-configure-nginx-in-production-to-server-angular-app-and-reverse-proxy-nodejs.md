@@ -18,8 +18,9 @@ In this guide we are going to:
 * configure NGINX as reverse proxy
 
 NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server.
-We use it in the #codingmarks project as web server to serve static files and as a reverse proxy for the NodeJS API and Keycloak Server.
+We use it in the #codingmarks project as web server to serve static files and as a reverse proxy for the NodeJS API and Keycloak Server:
 
+![Network Diagram](https://raw.githubusercontent.com/wiki/Codingpedia/bookmarks-api/images/network-diagram.png)
 
 <!--more-->
 
