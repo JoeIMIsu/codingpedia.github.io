@@ -491,14 +491,14 @@ INFO: Received message 'Message #10' from '392f68ef'
 </p>
 
 <p class="note_normal" style="color: #333333;">
-  Published at Codingpedia.org with the permission of <a title="http://www.codingpedia.org/author/aredko" href="http://www.codingpedia.org/author/aredko" target="_blank">Andriy Redko</a> – source <a title="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" href="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" target="_blank">Java WebSockets (JSR-356) on Jetty 9.1</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com/" target="_blank">http://aredko.blogspot.com</a>
+  Published at Codingpedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" href="http://aredko.blogspot.de/2013/11/java-websockets-jsr-356-on-jetty-91.html" target="_blank">Java WebSockets (JSR-356) on Jetty 9.1</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com/" target="_blank">http://aredko.blogspot.com</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" /> 
   
   <p id="about_author_header">
-    <a href="http://www.codingpedia.org/author/aredko/" target="_blank">Andriy Redko {devmind}</a>
+    Andriy Redko {devmind}
   </p>
   
   <div id="author_details" style="text-align: justify;">

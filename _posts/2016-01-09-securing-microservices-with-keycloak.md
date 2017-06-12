@@ -91,7 +91,7 @@ tags:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://raw.githubusercontent.com/keycloak/keycloak/master/misc/logo/keycloak_icon_256px.png" alt="Keycloak-logo" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/keycloak/" target="_blank">Keycloak</a></strong>
+    <strong>Keycloak</strong>
   </p>
   
   <div id="social_logos_up">

@@ -68,7 +68,7 @@ tags:
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/johannes-brodwall.jpeg" alt="Johannes Brodwall" /> 
     
     <p id="about_author_header">
-      <strong><a href="http://www.codingpedia.org/author/jhannes/" target="_blank">Johannes Brodwall</a></strong>
+      <strong>Johannes Brodwall</strong>
     </p>
     
     <div id="author_details" style="text-align: justify;">

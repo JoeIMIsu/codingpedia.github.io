@@ -233,7 +233,7 @@ java:comp/env/jdbc/pcmDB.  --&gt;
 &lt;/bean&gt;</pre>
 
   <p style="text-align: justify;">
-    See my post <a title="Tomcat JDBC Connection Pool configuration for production and development" href="http://www.codingpedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/http://" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a>, to find out how the database resource is configured for production and development/testing environments.
+    See my post <a title="Tomcat JDBC Connection Pool configuration for production and development" href="http://www.codingpedia.org/ama/tomcat-jdbc-connection-pool-configuration-for-production-and-development/" target="_blank">Tomcat JDBC Connection Pool configuration for production and development</a>, to find out how the database resource is configured for production and development/testing environments.
   </p>
 
   <p>
@@ -546,7 +546,7 @@ Well, that&#8217;s it. You&#8217;ve learned about MyBatis, how it integrates wit
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
+    <strong>Adrian Matei</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">

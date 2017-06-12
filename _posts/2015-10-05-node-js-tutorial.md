@@ -1596,14 +1596,14 @@ You’re done. Let’s test the delete functionality. Go back to the browser, an
 If you enjoyed my teaching style and would like to learn more from me, [subscribe to my newsletter](http://programmingwithmosh.com/node-js-course-coming-soon/). I’ll send out an announcement once my course is ready.
 
 <p class="note_normal">
-  Published on Codingpedia.org with the permission of<span class="Apple-converted-space"> </span><a title="http://www.codingpedia.org/author/aredko" href="http://www.codingpedia.org/author/Udemy" target="_blank">Udemy</a><span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/node-js-tutorial/" target="_blank">Node.js Tutorial</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
+  Published on Codingpedia.org with the permission of<span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span>– source <a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/node-js-tutorial/" target="_blank">Node.js Tutorial</a> from<span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/udemy-logo.png" alt="Udemy blog" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/udemy/" target="_blank">Udemy</a></strong>
+    <strong>Udemy</strong>
   </p>
   
   <div id="social_logos_up">

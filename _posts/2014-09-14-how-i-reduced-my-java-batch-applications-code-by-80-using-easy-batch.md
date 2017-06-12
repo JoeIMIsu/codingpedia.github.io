@@ -159,7 +159,7 @@ You can check out Easy Batch tutorials <a title="Easy Batch tutorials" href="htt
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://pbs.twimg.com/profile_images/682858329220190208/YhIK6TIE_400x400.jpg" alt="Mahmoud Ben Hassine" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/mahmoudbenhassine/" target="_blank">Mahmoud Ben Hassine</a></strong>
+   Mahmoud Ben Hassine
   </p>
   
   <div id="author_details" style="text-align: justify;">

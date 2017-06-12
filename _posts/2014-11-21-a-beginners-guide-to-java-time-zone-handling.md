@@ -509,7 +509,7 @@ jodaTimeParse("1970-01-01T00:00:00.200+0100", 200L - 1000 * 60 * 60);
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/vladmihalcea/" target="_blank">Vlad Mihalcea</a></strong>
+    <strong>Vlad Mihalcea</strong>
   </p>
   
   <div id="author_details" style="text-align: justify;">

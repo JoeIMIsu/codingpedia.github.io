@@ -854,14 +854,14 @@ You can find the source code at github <a title="https://github.com/sivaprasadr
 </p>
 
 <p class="note_normal">
-  Published at Codingpedia.org with permission of <a style="font-style: italic; color: #bc360a;" title="http://www.codingpedia.org/author/sivalabs/" href="http://www.codingpedia.org/author/sivalabs/" target="_blank">Siva Reddy</a><span style="font-style: italic; color: #3a4145;"> &#8211; source <a title="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" href="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" target="_blank">SpringMVC4 + Spring Data JPA + SpringSecurity configuration using JavaConfig </a></span><span style="font-style: italic; color: #3a4145;"> from </span><a style="font-style: italic; color: #bc360a;" title="http://www.sivalabs.in/" href="http://www.sivalabs.in/" target="_blank">http://www.sivalabs.in/</a>
+  Published at Codingpedia.org with permission of Siva Reddy<span style="font-style: italic; color: #3a4145;"> &#8211; source <a title="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" href="http://www.sivalabs.in/2014/03/springmvc4-spring-data-jpa.html" target="_blank">SpringMVC4 + Spring Data JPA + SpringSecurity configuration using JavaConfig </a></span><span style="font-style: italic; color: #3a4145;"> from </span><a style="font-style: italic; color: #bc360a;" title="http://www.sivalabs.in/" href="http://www.sivalabs.in/" target="_blank">http://www.sivalabs.in/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/sivalabs.png" alt="Siva Reddy" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/sivalabs/" target="_blank">Siva Reddy</a></strong>
+    <strong>Siva Reddy</strong>
   </p>
   
   <div id="author_details" style="text-align: justify;">

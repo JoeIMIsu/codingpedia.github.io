@@ -142,7 +142,7 @@ So, that’s about it for the JVM memory segment basics. Coming to back to the P
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with the permission of <a style="color: #bc360a;" href="http://www.codingpedia.org/author/abhirockzz/" target="_blank">Abhishek Gupta</a> – source <a title="https://abhirockzz.wordpress.com/2014/09/06/jvm-permgen-where-art-thou/" href="https://abhirockzz.wordpress.com/2014/09/06/jvm-permgen-where-art-thou/" target="_blank">JVM PermGen – where art thou?</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com" target="_blank">https://abhirockzz.wordpress.com</a>
+  Published at Codingpedia.org with the permission of Abhishek Gupta – source <a title="https://abhirockzz.wordpress.com/2014/09/06/jvm-permgen-where-art-thou/" href="https://abhirockzz.wordpress.com/2014/09/06/jvm-permgen-where-art-thou/" target="_blank">JVM PermGen – where art thou?</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com" target="_blank">https://abhirockzz.wordpress.com</a>
 </p>
 
 <p style="text-align: justify;">
@@ -150,7 +150,7 @@ So, that’s about it for the JVM memory segment basics. Coming to back to the P
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" /> 
     
     <p id="about_author_header">
-      <strong><a href="http://www.codingpedia.org/author/abhirockzz/" target="_blank">Abhishek Gupta</a></strong>
+      <strong>Abhishek Gupta</strong>
     </p>
     
     <div id="author_details" style="text-align: justify;">

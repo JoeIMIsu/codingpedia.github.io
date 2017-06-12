@@ -166,14 +166,14 @@ This blog post from Oracle goes further into `Optional`and it&#8217;s uses, com
 This cheat sheet provides a thorough overview of Optional &#8211; [Optional in Java 8 Cheat Sheet](http://java.dzone.com/articles/optional-java-8-cheat-sheet)
 
 <p class="note_normal">
-  Published at Codingpedia.org with permission of <a title="http://www.codingpedia.org/author/jhadesdev/" href="http://www.codingpedia.org/author/jhadesdev/" target="_blank">Aleksey Novik</a> &#8211; source <a title="http://blog.jhades.org/java-8-how-to-use-optional/" href="http://blog.jhades.org/java-8-how-to-use-optional/" target="_blank">Java 8 Optional: How to Use it</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codingpedia.org with permission of Aleksey Novik &#8211; source <a title="http://blog.jhades.org/java-8-how-to-use-optional/" href="http://blog.jhades.org/java-8-how-to-use-optional/" target="_blank">Java 8 Optional: How to Use it</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/jhadesdev/" target="_blank">Aleksey Novik</a></strong>
+    <strong>Aleksey Novik</strong>
   </p>
   
   <div id="author_details" style="text-align: justify;">

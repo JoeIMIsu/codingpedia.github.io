@@ -11,7 +11,7 @@ dsq_thread_id:
 Dear fellow coder,
 
 <p style="text-align: justify;">
-  Here, at <a style="color: #bc360a;" title="Codingpedia.org - about us" href="http://www.codingpedia.org/about-us/" target="_blank">Codingpedia.org</a>, we are firm believers that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We know you are talented, so we invite you to join our efforts and become a guest/regular writer for <a title="Codingpedia.org, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org </a>(we&#8217;ll call you a Coding Contributor).
+  Here, at <a style="color: #bc360a;" title="Codingpedia.org - about us" href="http://www.codingpedia.org/about/" target="_blank">Codingpedia.org</a>, we are firm believers that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We know you are talented, so we invite you to join our efforts and become a guest/regular writer for <a title="Codingpedia.org, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org </a>(we&#8217;ll call you a Coding Contributor).
 </p>
 
 <div id="toc_container" class="no_bullets">
@@ -62,7 +62,7 @@ Well, apart from the great joy you&#8217;ll definitely experience, when you sh
   * <span style="color: #3c3c3c;">drive traffic, ranking back to your own blog or website, via author link</span>
   * get more quality connections on Twitter, GitHub or Google Plus, via the author link
   * all your posts will include the <strong>nickname/author name</strong> you choose to represent you on the website (e.g. <a href="http://www.codingpedia.org/ama/how-to-handle-session-timeout-exceptions-in-spring-mvc/">http://www.codingpedia.org/<strong>ama</strong>/how-to-handle-session-timeout-exceptions-in-spring-mvc/</a>)
-  * your posts will be promoted on our social media channels and will be part of the <a title="Codingpedia.org - RSS feed" href="http://www.codingpedia.org/feed/" target="_blank">RSS feed</a>
+  * your posts will be promoted on our social media channels and will be part of the <a title="Codingpedia.org - RSS feed" href="http://www.codingpedia.org/feed.xml" target="_blank">RSS feed</a>
   * you can bring your own sponsors and adds for the articles you contribute
   * build a reputation and give something back to the community
   * you can enhance the quality of your posts by having at least one pair of eyes reviewing them before published

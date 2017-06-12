@@ -80,13 +80,13 @@ dateToLookBackAfterJoda.toDate();</pre>
 Check out also my related posts on the topic
 
   * <a title="Java Persistence Example with Spring, JPA2 and Hibernate" href="http://www.codingpedia.org/ama/java-persistence-example-with-spring-jpa2-and-hibernate/" target="_blank">Java Persistence Example with Spring, JPA2 and Hibernate </a>&#8211; CRUD example with JPA, Spring and Hibernate incorporating the method from above
-  * <a title="RESTful Web Services Example in Java with Jersey, Spring and MyBatis" href="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/http://" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis </a>&#8211; defines a REST API that among others, it requests recent podcasts employing the above method
+  * <a title="RESTful Web Services Example in Java with Jersey, Spring and MyBatis" href="http://www.codingpedia.org/ama/restful-web-services-example-in-java-with-jersey-spring-and-mybatis/" target="_blank">RESTful Web Services Example in Java with Jersey, Spring and MyBatis </a>&#8211; defines a REST API that among others, it requests recent podcasts employing the above method
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
+    <strong>Adrian Matei</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -96,7 +96,7 @@ Check out also my related posts on the topic
   <div id="follow_social" style="clear: both;">
     <div id="social_logos">
       <a class="icon-googleplus" href="https://plus.google.com/+CodingpediaOrg" target="_blank"> </a> <a class="icon-twitter" href="https://twitter.com/codingpedia" target="_blank"> </a> <a class="icon-facebook" href="https://www.facebook.com/codingpedia" target="_blank"> </a> <a class="icon-linkedin" href="https://www.linkedin.com/company/codingpediaorg" target="_blank"> </a> <a class="icon-github" href="https://github.com/amacoder" target="_blank"> </a>
-    </div>
+    </div>F
 
     <div class="clear">
     </div>

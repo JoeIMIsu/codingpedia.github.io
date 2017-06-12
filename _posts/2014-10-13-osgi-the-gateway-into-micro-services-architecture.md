@@ -517,7 +517,7 @@ Would be nice to check if database has the person populated as well. With <a st
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with the permission of <a title="http://www.codingpedia.org/author/aredko" href="http://www.codingpedia.org/author/aredko" target="_blank">Andriy Redko</a> – source <a title="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" href="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" target="_blank">OSGi: the gateway into micro-services architecture</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com" target="_blank">http://aredko.blogspot.com</a>
+  Published at Codingpedia.org with the permission of Andriy RedkoAndriy Redko</a> – source <a title="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" href="http://aredko.blogspot.ro/2014/08/osgi-gateway-into-micro-services.html" target="_blank">OSGi: the gateway into micro-services architecture</a> from <a title="http://aredko.blogspot.com" href="http://aredko.blogspot.com" target="_blank">http://aredko.blogspot.com</a>
 </p>
 
 <p style="text-align: justify;">
@@ -525,7 +525,7 @@ Would be nice to check if database has the person populated as well. With <a st
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" /> 
     
     <p id="about_author_header">
-      <a href="http://www.codingpedia.org/author/aredko/" target="_blank">Andriy Redko {devmind}</a>
+      Andriy Redko {devmind}
     </p>
     
     <div id="author_details" style="text-align: justify;">

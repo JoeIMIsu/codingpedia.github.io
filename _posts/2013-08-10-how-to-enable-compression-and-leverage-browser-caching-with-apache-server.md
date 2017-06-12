@@ -38,7 +38,7 @@ Compressing resources with gzip or deflate will reduce the number of bytes sent 
 
 #### 1.1 Enable mod_deflate on GoDaddy
 
-To enable  <span style="background-color: #e6e6e6; padding: 0px 3px;">mod_deflate</span> on a GoDaddy Virtual Private Server account, you have to use _Easy Apache_ and the same procedure as in <a title="Troubleshooting wordpress on GoDaddy" href="http://www.codingpedia.org/troubleshooting-wordpress-on-godaddy-vps-account/" target="_blank">Troubleshooting WordPress installation on GoDaddy VPS</a>. You need to check the <span style="background-color: #e6e6e6; padding: 0px 3px;">Deflate</span> option at step number _5. Exhaustive Options List_ and recompile the Apache Server.
+To enable  <span style="background-color: #e6e6e6; padding: 0px 3px;">mod_deflate</span> on a GoDaddy Virtual Private Server account, you have to use _Easy Apache_ and the same procedure as in <a title="Troubleshooting wordpress on GoDaddy" href="http://www.codingpedia.org/ama/troubleshooting-wordpress-on-godaddy-vps-account/" target="_blank">Troubleshooting WordPress installation on GoDaddy VPS</a>. You need to check the <span style="background-color: #e6e6e6; padding: 0px 3px;">Deflate</span> option at step number _5. Exhaustive Options List_ and recompile the Apache Server.
 
 [<img class="alignnone size-medium wp-image-288" src="{{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-300x126.png" alt="easy_apache_deflate" width="300" height="126" srcset="{{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-300x126.png 300w, {{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-1024x432.png 1024w, {{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate-624x263.png 624w, {{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate.png 1028w" sizes="(max-width: 300px) 100vw, 300px" />]({{site.url}}/wp-content/uploads/2013/08/easy_apache_deflate.png)
 
@@ -182,7 +182,7 @@ We promise to only share high quality podcasts and episodes.
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
+    <strong>Adrian Matei</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">

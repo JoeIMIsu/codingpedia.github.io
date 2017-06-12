@@ -482,14 +482,14 @@ else if (time.Subtract(LastMotionTime) &gt; TimeSpan.FromMinutes(1) || (timeOfDa
 </p>
 
 <p style="text-align: justify;" class="note_normal">
-  <span>Published at Codingpedia.org with the permission of <a href="http://www.codingpedia.org/author/toptal/" target="_blank">Toptal</a> – source </span><a title="Are you getting worked up over code duplication?" href="http://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters" target="_blank">Unit Tests, How to Write Testable Code and Why it Matters</a><span> from </span><a title="http://www.toptal.com/blog" href="http://www.toptal.com/blog" target="_blank">http://www.toptal.com/blog</a>
+  <span>Published at Codingpedia.org with the permission of Toptal – source </span><a title="Are you getting worked up over code duplication?" href="http://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters" target="_blank">Unit Tests, How to Write Testable Code and Why it Matters</a><span> from </span><a title="http://www.toptal.com/blog" href="http://www.toptal.com/blog" target="_blank">http://www.toptal.com/blog</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/toptal-logo.png" alt="Toptal-logo" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/toptal/" target="_blank">Toptal Blog</a></strong>
+    <strong>Toptal Blog</strong>
   </p>
 
   <div id="social_logos_up">

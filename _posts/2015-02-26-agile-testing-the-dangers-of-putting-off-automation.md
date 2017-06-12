@@ -136,7 +136,7 @@ _
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://joecolantonio.com/testtalks/wp-content/uploads/2014/12/TestTalksItunesCover.png" alt="Joe Colantonio" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/joecolantonio/" target="_blank">Joe Colantonio</a></strong>
+    Joe Colantonio
   </p>
   
   <div id="social_logos_up">

@@ -475,14 +475,14 @@ javax.faces.partial.ajax:true</pre>
 </ul>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with permission of <a title="http://www.codingpedia.org/author/jhadesdev/" href="http://www.codingpedia.org/author/jhadesdev/" target="_blank">Aleksey Novik</a> – source <a title="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" href="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" target="_blank">How JSF Works and how to Debug it</a> – is polyglot an alternative? from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codingpedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" href="http://blog.jhades.org/how-jsf-works-and-how-to-debug-jsf-applications-effectivelly-is-polyglot-an-alternative/" target="_blank">How JSF Works and how to Debug it</a> – is polyglot an alternative? from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/jhadesdev/" target="_blank">Aleksey Novik</a></strong>
+    <strongAleksey Novik</strong>
   </p>
   
   <div id="author_details" style="text-align: justify;">

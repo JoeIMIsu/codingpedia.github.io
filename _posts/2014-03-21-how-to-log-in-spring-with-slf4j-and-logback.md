@@ -411,7 +411,7 @@ So you I am just getting the &#8220;LoggingResponseFilter &#8221; logger  and 
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
+    <strong>Adrian Matei</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">

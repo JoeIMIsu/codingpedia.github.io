@@ -460,5 +460,5 @@ The `gulp-webserver` plugin was configured to do exactly that in the following w
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with permission of <a title="http://www.codingpedia.org/author/jhadesdev/" href="http://www.codingpedia.org/author/jhadesdev/" target="_blank">Aleksey Novik</a> – source <a title="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" href="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" target="_blank"><em>What every Angular project likely needs &#8211; and a Gulp build to provide it</em></a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codingpedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" href="http://blog.jhades.org/what-every-angular-project-likely-needs-and-a-gulp-build-to-provide-it/" target="_blank"><em>What every Angular project likely needs &#8211; and a Gulp build to provide it</em></a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p></section>

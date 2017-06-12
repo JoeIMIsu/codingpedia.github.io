@@ -126,14 +126,14 @@ _Few things to note_
 Cheers !
 
 <p class="note_normal">
-  Published at Codingpedia.org with the permission of <a href="http://www.codingpedia.org/author/abhirockzz/" target="_blank">Abhishek Gupta</a> – source <a title="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" href="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" target="_blank">Timeout policies for EJBs : how do they help…?</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com" target="_blank">https://abhirockzz.wordpress.com</a>
+  Published at Codingpedia.org with the permission of Abhishek Gupta – source <a title="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" href="https://abhirockzz.wordpress.com/2015/04/05/timeout-policies-for-ejbs-how-do-they-help/" target="_blank">Timeout policies for EJBs : how do they help…?</a> from <a title="https://abhirockzz.wordpress.com" href="https://abhirockzz.wordpress.com" target="_blank">https://abhirockzz.wordpress.com</a>
 </p>
 
 <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/abhirockzz/" target="_blank">Abhishek Gupta</a></strong>
+    <strong>Abhishek Gupta</strong>
   </p>
   
   <div id="author_details" style="text-align: justify;">

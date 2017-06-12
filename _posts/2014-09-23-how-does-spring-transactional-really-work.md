@@ -447,7 +447,7 @@ public class TransactionManagersConfig {
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 
     
     <p id="about_author_header">
-      <strong><a href="http://www.codingpedia.org/author/jhadesdev/" target="_blank">Aleksey Novik</a></strong>
+      <strong>Aleksey Novik</strong>
     </p>
     
     <div id="author_details" style="text-align: justify;">

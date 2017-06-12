@@ -329,7 +329,7 @@ Well, that&#8217;s it. You&#8217;ve learned how to configure multiple a Spring a
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
+    <strong>Adrian Matei</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">

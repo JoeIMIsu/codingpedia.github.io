@@ -265,7 +265,7 @@ tags:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/toptal-logo.png" alt="Toptal-logo" /> 
   
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/toptal/" target="_blank">Toptal Blog</a></strong>
+    <strong>Toptal Blog</strong>
   </p>
   
   <div id="social_logos_up">

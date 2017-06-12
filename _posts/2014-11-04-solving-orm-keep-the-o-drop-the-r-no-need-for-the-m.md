@@ -304,7 +304,7 @@ The Hibernate team has written [Hibernate OGM](http://hibernate.org/ogm/), which
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  Published at Codingpedia.org with permission of <a title="http://www.codingpedia.org/author/jhadesdev/" href="http://www.codingpedia.org/author/jhadesdev/" target="_blank">Aleksey Novik</a> – source <a title="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" href="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" target="_blank">Solving ORM &#8211; Keep the O, Drop the R, no need for the M</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
+  Published at Codingpedia.org with permission of Aleksey Novik – source <a title="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" href="http://blog.jhades.org/solving-orm-complexity-keep-the-o-drop-the-r-no-need-for-the-m/" target="_blank">Solving ORM &#8211; Keep the O, Drop the R, no need for the M</a> from <a title="http://blog.jhades.org/" href="http://blog.jhades.org/" target="_blank">http://blog.jhades.org/</a>
 </p>
 
 <p style="text-align: justify;">
@@ -312,7 +312,7 @@ The Hibernate team has written [Hibernate OGM](http://hibernate.org/ogm/), which
     <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" /> 
     
     <p id="about_author_header">
-      <strong><a href="http://www.codingpedia.org/author/jhadesdev/" target="_blank">Aleksey Novik</a></strong>
+      <strong>Aleksey Novik</strong>
     </p>
     
     <div id="author_details" style="text-align: justify;">

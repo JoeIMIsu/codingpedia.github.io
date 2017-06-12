@@ -1791,14 +1791,14 @@ $ git config --global alias.co commit</pre>
       </p>
 
       <p style="text-align: justify;" class="note_normal">
-        <span>Published on Codingpedia.org with the permission of</span><span class="Apple-converted-space"> </span><a title="http://www.codingpedia.org/author/aredko" href="http://www.codingpedia.org/author/Udemy" target="_blank">Udemy</a><span class="Apple-converted-space"> </span><span>– source </span><a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/git-tutorial-a-comprehensive-guide/" target="_blank">Git Tutorial: A Comprehensive Introduction</a><span> from</span><span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
+        <span>Published on Codingpedia.org with the permission of</span><span class="Apple-converted-space"> </span>Udemy<span class="Apple-converted-space"> </span><span>– source </span><a title="http://aredko.blogspot.ch/2015/02/a-fresh-look-on-accessing-database-on.html" href="https://blog.udemy.com/git-tutorial-a-comprehensive-guide/" target="_blank">Git Tutorial: A Comprehensive Introduction</a><span> from</span><span class="Apple-converted-space"> </span><a title="http://aredko.blogspot.com" href="https://blog.udemy.com/" target="_blank">https://blog.udemy.com/</a>
       </p>
 
       <div id="about_author" style="background-color: #e6e6e6; padding: 10px;">
         <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/udemy-logo.png" alt="Udemy blog" />
 
         <p id="about_author_header">
-          <strong><a href="http://www.codingpedia.org/author/udemy/" target="_blank">Udemy</a></strong>
+          <strong>Udemy</strong>
         </p>
 
         <div id="social_logos_up">

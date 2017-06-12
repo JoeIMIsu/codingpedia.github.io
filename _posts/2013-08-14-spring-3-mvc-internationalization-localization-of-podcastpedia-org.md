@@ -174,7 +174,7 @@ public void addDataToModel(ModelMap model){
 
 #### Browser Caching optimization
 
-If you have enabled browser caching, as specified for example in the post <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codingpedia.org/ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/http://" target="_blank">How To: Enable compression and leverage browser caching with Apache Server</a>, make sure you set the `expiring` and `cache control` for the html pages to 0 seconds:
+If you have enabled browser caching, as specified for example in the post <a title="How To: Enable compression and leverage browser caching with Apache Server" href="http://www.codingpedia.org/ama/how-to-enable-compression-and-leverage-browser-caching-with-apache-server/" target="_blank">How To: Enable compression and leverage browser caching with Apache Server</a>, make sure you set the `expiring` and `cache control` for the html pages to 0 seconds:
 
 <pre><code class="xml">ExpiresByType text/html                 "access plus 0 seconds"
 ....
@@ -201,7 +201,7 @@ We promise to only share high quality podcasts and episodes.
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="{{site.url}}/images/authors/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
+    <strong>Adrian Matei</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">

@@ -13,7 +13,7 @@ dsq_thread_id:
 Dear fellow coder,
 
 <p style="text-align: justify;">
-  We believe here, at <a style="color: #bc360a;" title="Codingpedia.org - about us" href="http://www.codingpedia.org/about-us/" target="_blank">Codingpedia.org</a>, that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We invite you to join our efforts and become a <em>Coding Friend</em> - <a style="color: #bc360a;" title="Codingpedia.org - Friends" href="http://www.codingpedia.org/frinds/" target="_blank">www.codingpedia.org/friends</a>. All you have to do is keep publishing great articles to your blog, and our team of content editors will pick up your best content and republish it on our website.
+  We believe here, at <a style="color: #bc360a;" title="Codingpedia.org - about us" href="http://www.codingpedia.org/about/" target="_blank">Codingpedia.org</a>, that technological advancement and efficiency, driven among other things by the humans’ ability to program machines, has a positive impact on human evolution and well-being. We want to contribute to the expansion of this ability by offering a platform for sharing coding knowledge. We invite you to join our efforts and become a <em>Coding Friend</em> - <a style="color: #bc360a;" title="Codingpedia.org - Friends" href="http://www.codingpedia.org/friends/" target="_blank">www.codingpedia.org/friends</a>. All you have to do is keep publishing great articles to your blog, and our team of content editors will pick up your best content and republish it on our website.
 </p>
 
 <p class="alert_normal" style="text-align: justify; padding-left: 30px;">
@@ -148,7 +148,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.gravatar.com/avatar/4f603396c8723741d2665f87beb4d1f2?s=150&r=pg&d=mm" alt="Johannes Brodwall" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/jhannes/" target="_blank">Johannes Brodwall</a></strong>
+    <strong>Johannes Brodwall</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -169,7 +169,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2014/12/cwbuecheler.png" alt="Johannes Brodwall" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/cwbuecheler/" target="_blank">Christopher Buecheler</a></strong>
+    Christopher Buecheler</strong>
   </p>
 
   <div id="social_logos_up">
@@ -190,7 +190,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://pbs.twimg.com/profile_images/682858329220190208/YhIK6TIE_400x400.jpg" alt="Mahmoud Ben Hassine" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/mahmoudbenhassine/" target="_blank">Mahmoud Ben Hassine</a></strong>
+    Mahmoud Ben Hassine
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -211,7 +211,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://2.gravatar.com/avatar/eb0d2c5bf9426d7718efc6f9b087efb5?s=96&d=identicon&r=G" alt="Abhishek Gupta" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/abhirockzz/" target="_blank">Abhishek Gupta</a></strong>
+    <strong>Abhishek Gupta</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -232,7 +232,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2016/01/keycloak-logo.png" alt="Keycloak-logo" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/keycloak/" target="_blank">Keycloak</a></strong>
+    <strong>Keycloak</strong>
   </p>
 
   <div id="social_logos_up">
@@ -251,7 +251,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/11/amacoder.png" alt="Podcastpedia image" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/ama/" target="_blank">Adrian Matei</a></strong>
+    <strong>Adrian Matei</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -272,7 +272,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh5.googleusercontent.com/-TE09duPdvbA/U1pkmDy2uSI/AAAAAAAACUM/0AVivijfro4/w896-h897-no/VladMihalcea.jpg" alt="Vlad Mihalcea" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/vladmihalcea/" target="_blank">Vlad Mihalcea</a></strong>
+    <strong>Vlad Mihalcea</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -293,7 +293,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="https://lh6.googleusercontent.com/-nJLCOBcwQyQ/U3PTSOfhw_I/AAAAAAAAABI/w21JxlhW4lo/s498-no/my-blog-53.jpg" alt="Podcastpedia image" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/jhadesdev/" target="_blank">Aleksey Novik</a></strong>
+    <strong>Aleksey Novik</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -314,7 +314,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2014/09/sivalabs.png" alt="Siva Reddy" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/sivalabs/" target="_blank">Siva Reddy</a></strong>
+    <strong>Siva Reddy</strong>
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -335,7 +335,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://1.bp.blogspot.com/_WNHv4iYKMe0/S2Rnco10R2I/AAAAAAAAAAc/eTh_Rkk8V_w/S220/photo.jpg" alt="Andriy Redko" />
 
   <p id="about_author_header">
-    <a href="http://www.codingpedia.org/author/aredko/" target="_blank">Andriy Redko {devmind}</a>
+    Andriy Redko {devmind}
   </p>
 
   <div id="author_details" style="text-align: justify;">
@@ -356,7 +356,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2016/02/toptal-logo.png" alt="Toptal-logo" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/toptal/" target="_blank">Toptal Blog</a></strong>
+    <strong>Toptal Blog</strong>
   </p>
 
   <div id="social_logos_up">
@@ -375,7 +375,7 @@ Our current Coding Friends:
   <img id="author_portrait" style="float: left; margin-right: 20px;" src="http://www.codingpedia.org/wp-content/uploads/2015/10/udemy-logo.png" alt="Udemy blog" />
 
   <p id="about_author_header">
-    <strong><a href="http://www.codingpedia.org/author/udemy/" target="_blank">Udemy</a></strong>
+    <strong>Udemy</strong>
   </p>
 
   <div id="social_logos_up">
