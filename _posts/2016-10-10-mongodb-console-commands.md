@@ -91,6 +91,14 @@ Response
 
 ```
 
+#### Deleting
+
+Removes all bookmarks for user, identified by userId
+```
+> db.bookmarks.remove({userId:"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39"});
+WriteResult({ "nRemoved" : 4 })
+```
+
 #### Sorting
 
 Sort documents by updatedAt Date (ascending and descending):
@@ -156,6 +164,17 @@ After that show the newly created index:
         }
 ]
 ```
+
+Drop the unique "name" index:
+via name
+```
+> db.bookmarks.dropIndex("name_1");
+```
+or via key
+```
+> db.pets.dropIndex( { "name" : 1 } );
+```
+
 Doku:
 https://docs.mongodb.com/v3.2/tutorial/manage-indexes/
 
