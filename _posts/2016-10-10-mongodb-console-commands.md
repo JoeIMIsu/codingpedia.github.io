@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Practical MongoDB shell commands
-description: "In this one I will try to implement a simple GET method that will deliver mocked bookmarks."
+title: Practical MongoDB commands every developer should know
+description: "Practical MongoDB commands every developer should know"
 author: ama
 permalink: /ama/practical-mongodb-console-commands
 published: false
@@ -9,9 +9,10 @@ categories: [mongodb]
 tags: [codingpedia bookmarks, mongodb]
 ---
 
-The bookmarks from [bookmarks.codingpedia.org](https://bookmarks.codingpedia.org/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/), currently version 3.2. Very often I find myself needing to modify something in the
- in the database, and the experience has taught me that doing it via the shell is one the best ways and it brings you sort of closer to the system. So, in this blog post I will list some of the console commands I use in MongoDB, as a reminder for later
-  and maybe somebody else can take advantage of it.
+The bookmarks from [www.codingmarks.org](https://www.codingmarks.org/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/), currently version 3.2.
+ Very often I find in the situation where I need to modify or look for something in the mongo database. Experience has taught me that doing it
+  via the shell is one the best ways and it brings you sort of closer to the system. So, in this blog post I will list some of the practical MongoDB shell commands I use,
+   as a reminder for later use and maybe somebody else can take advantage of it.
 
   {% include source-code-codingpedia-bookmarks.html %}
 
@@ -25,16 +26,17 @@ To start the mongo shell and connect to the MongoDB instance running on localhos
 
 ``` bash
 > cd <mongodb installation dir>
-
 ```
 
 and then type `./bin/mongo` to start mongo
 
-> If you are like me, and hooked on aliases[^1], you might use something like `alias mongo-client-start='~/dev/mongodb/bin/mongo'`. You can also add <mongodb installation dir>/bin` to the `PATH environment variable and then you can just type `mongo
+> If you are like me, and hooked on aliases[^1], you might use something like `alias mongo-start-client='~/dev/mongodb/bin/mongo'`. You can also add <mongodb installation dir>/bin` to the `PATH environment variable and then you can just type `mongo`
 
 [^1]: <http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/>
 
 ## Quit the mongo shell
+
+Once in the mongo shell, type the following command to exit it:
 
 ``` bash
 > quit()
@@ -126,7 +128,8 @@ Create index for userId
 > (1 - is sort ascending); see doku for more information
 Doku:
 https://docs.mongodb.com/v3.2/reference/method/db.collection.createIndex/#db.collection.createIndex
-
+https://docs.mongodb.com/manual/core/index-single/
+https://docs.mongodb.com/manual/indexes/
 
 After that show the newly created index:
 
@@ -173,6 +176,113 @@ After that show the newly created index:
 ]
 ```
 
+Verify if index is used for a query with the explain method:
+https://docs.mongodb.com/manual/reference/explain-results/
+
+```
+> db.bookmarks.find({userId:"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39"}).explain("executionStats");
+{
+	"queryPlanner" : {
+		"plannerVersion" : 1,
+		"namespace" : "codingpedia-bookmarks.bookmarks",
+		"indexFilterSet" : false,
+		"parsedQuery" : {
+			"userId" : {
+				"$eq" : "2d6f6cb5-44f3-441d-a0c5-ec9afea98d39"
+			}
+		},
+		"winningPlan" : {
+			"stage" : "FETCH",
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"keyPattern" : {
+					"userId" : 1
+				},
+				"indexName" : "userId_1",
+				"isMultiKey" : false,
+				"isUnique" : false,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 1,
+				"direction" : "forward",
+				"indexBounds" : {
+					"userId" : [
+						"[\"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39\", \"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39\"]"
+					]
+				}
+			}
+		},
+		"rejectedPlans" : [ ]
+	},
+	"executionStats" : {
+		"executionSuccess" : true,
+		"nReturned" : 2714,
+		"executionTimeMillis" : 4,
+		"totalKeysExamined" : 2714,
+		"totalDocsExamined" : 2714,
+		"executionStages" : {
+			"stage" : "FETCH",
+			"nReturned" : 2714,
+			"executionTimeMillisEstimate" : 10,
+			"works" : 2715,
+			"advanced" : 2714,
+			"needTime" : 0,
+			"needYield" : 0,
+			"saveState" : 21,
+			"restoreState" : 21,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 2714,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 2714,
+				"executionTimeMillisEstimate" : 10,
+				"works" : 2715,
+				"advanced" : 2714,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 21,
+				"restoreState" : 21,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"userId" : 1
+				},
+				"indexName" : "userId_1",
+				"isMultiKey" : false,
+				"isUnique" : false,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 1,
+				"direction" : "forward",
+				"indexBounds" : {
+					"userId" : [
+						"[\"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39\", \"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39\"]"
+					]
+				},
+				"keysExamined" : 2714,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"serverInfo" : {
+		"host" : "adrians-mbp.home",
+		"port" : 27017,
+		"version" : "3.2.9",
+		"gitVersion" : "22ec9e93b40c85fc7cae7d56e7d6a02fd811088c"
+	},
+	"ok" : 1
+}
+```
+
+See 
+
+REsult:
+
+
 Drop the unique "name" index:
 via name
 ```
@@ -209,6 +319,12 @@ Update Many
 }) :
 undefined
 ```
+
+Update - add new field to all entries
+```
+> db.bookmarks.update({}, {$set: {language: "en"}}, {multi: true});
+```
+
 
 After dropping index
 ```
