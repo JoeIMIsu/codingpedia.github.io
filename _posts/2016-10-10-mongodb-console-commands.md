@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practical MongoDB commands every developer should know
-description: "Practical MongoDB commands every developer should know"
+description: "Practical MongoDB commands every developer should know, or I should know..."
 author: ama
 permalink: /ama/practical-mongodb-console-commands
 published: false
@@ -30,23 +30,22 @@ To start the mongo shell and connect to the MongoDB instance running on localhos
 
 and then type `./bin/mongo` to start mongo
 
-> If you are like me, and hooked on aliases[^1], you might use something like `alias mongo-start-client='~/dev/mongodb/bin/mongo'`. You can also add <mongodb installation dir>/bin` to the `PATH environment variable and then you can just type `mongo`
+> If you are like me, and hooked on aliases[^1], you might use something like `alias mongo-start-client='~/dev/mongodb/bin/mongo'`.
+ You can also add `<mongodb installation dir>/bin` to the PATH environment variable and then you can just type `mongo`
 
 [^1]: <http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/>
 
 ## Quit the mongo shell
 
-Once in the mongo shell, type the following command to exit it:
+You can type the following command to exit the mongo shell:
 
 ``` bash
 > quit()
 ```
 
-## Working with mongo shell
+## Display database and collections
 
-### Display database and collections
-
-First print a list of all available databases on the server via `show dbs`:
+Once in, you can print a list of all available database on the server via `show dbs`:
 
 ``` bash
 > show dbs
@@ -55,24 +54,24 @@ codingpedia-bookmarks  0.000GB
 local                  0.000GB
 ```
 
-
-Then use the _codingpedia-bookmarks_ collection:
+To switch to the _codingpedia-bookmarks_ database, use the `use` command:
 
 ``` bash
 > use codingpedia-bookmarks
 switched to db codingpedia-bookmarks
 ```
 
-Then print a list of all collections for current database
+Then print a list of all collections of the current database
 
 ``` bash
 > show collections
 bookmarks
 ```
 
-### Find documents in collection
+## Find documents
 
-Find all documents from collection
+### Find all documents
+To find all documents from collection, type the following:
 
 ``` bash
 > db.bookmarks.find()
@@ -92,16 +91,35 @@ Response
 { "_id" : ObjectId("57f5dd573fed7e3677b20ca5"), "name" : "windows bookmark", "url" : "windows url", "description" : "some js description", "category" : "git", "tags" : [ "git command", "setup" ], "__v" : 0 }
 
 ```
+### Find documents with filter
 
-Find documents via attribute filtering:
+Filter by one attribute (here filter by location):
 ```
 > db.bookmarks.find({location: "http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/"});
 { "_id" : ObjectId("5948ab65ce8e01b7e330b330"), "name" : "Git magic", "location" : "http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/", "tags" : [ "free-programming-books-zh", "版本控制" ], "description" : "", "descriptionHtml" : "<p></p>", "createdAt" : ISODate("2017-06-20T04:58:13.192Z"), "shared" : true, "userId" : "2d6f6cb5-44f3-441d-a0c5-ec9afea98d39", "language" : "zh" }
 ```
-https://docs.mongodb.com/manual/reference/method/db.collection.find/
 
+```
+> db.bookmarks.find(more attributes maybe with tag)
+```
 
-#### Deleting
+Check out the [find documention](https://docs.mongodb.com/manual/reference/method/db.collection.find/) for more details.
+
+### Sort results
+
+You can apply `sort()`` to the cursor before retrieving any documents from the database.
+
+Example Sort documents by `updatedAt` Date (`1` for ascending and `-1` for descending):
+docs
+
+``` bash
+> db.bookmarks.find().sort({updatedAt:1});
+> db.bookmarks.find().sort({updatedAt:-1});
+```
+
+See [doku](https://docs.mongodb.com/manual/reference/method/cursor.sort/) for more details.
+
+## Delete documents
 
 Removes all bookmarks for user, identified by userId
 ```
@@ -109,18 +127,32 @@ Removes all bookmarks for user, identified by userId
 WriteResult({ "nRemoved" : 4 })
 ```
 
-#### Sorting
+## Indexing
 
-Sort documents by updatedAt Date (ascending and descending):
-docs - https://docs.mongodb.com/manual/reference/method/cursor.sort/
+### Show indexes
 
-``` bash
-> db.bookmarks.find().sort({updatedAt:1});
-> db.bookmarks.find().sort({updatedAt:-1});
+Before creating an index we should see the existing indexes on a collection,
+by typing the following command:
+
+```
+> db.bookmarks.getIndexes()
+
+[
+        {
+                "v" : 1,
+                "key" : {
+                        "_id" : 1
+                },
+                "name" : "_id_",
+                "ns" : "codingpedia-bookmarks.bookmarks"
+        }
+]
 ```
 
+### Create new index
 
-Create index for userId
+Create index for the `userId` field
+
 ```
 > db.bookmarks.createIndex( { userId: 1 } )
 ```
@@ -132,7 +164,30 @@ https://docs.mongodb.com/manual/core/index-single/
 https://docs.mongodb.com/manual/indexes/
 
 After that show the newly created index:
+```
+> db.bookmarks.getIndexes()
 
+[
+        {
+                "v" : 1,
+                "key" : {
+                        "_id" : 1
+                },
+                "name" : "_id_",
+                "ns" : "codingpedia-bookmarks.bookmarks"
+        },
+        {
+                "v" : 1,
+                "key" : {
+                        "userId" : 1
+                },
+                "name" : "userId_1",
+                "ns" : "codingpedia-bookmarks.bookmarks"
+        }
+]
+```
+
+Create unique index:
 ```
 > db.bookmarks.getIndexes()
 
@@ -149,32 +204,15 @@ After that show the newly created index:
                 "v" : 1,
                 "unique" : true,
                 "key" : {
-                        "name" : 1
-                },
-                "name" : "name_1",
-                "ns" : "codingpedia-bookmarks.bookmarks",
-                "background" : true
-        },
-        {
-                "v" : 1,
-                "unique" : true,
-                "key" : {
                         "location" : 1
                 },
                 "name" : "location_1",
                 "ns" : "codingpedia-bookmarks.bookmarks",
                 "background" : true
-        },
-        {
-                "v" : 1,
-                "key" : {
-                        "userId" : 1
-                },
-                "name" : "userId_1",
-                "ns" : "codingpedia-bookmarks.bookmarks"
         }
 ]
 ```
+
 
 Verify if index is used for a query with the explain method:
 https://docs.mongodb.com/manual/reference/explain-results/
@@ -278,7 +316,7 @@ https://docs.mongodb.com/manual/reference/explain-results/
 }
 ```
 
-See 
+See
 
 REsult:
 
