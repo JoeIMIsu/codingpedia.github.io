@@ -128,6 +128,7 @@ WriteResult({ "nRemoved" : 4 })
 ```
 
 ## Indexing
+[Indexes](https://docs.mongodb.com/manual/indexes/) support the efficient execution of queries in MongoDB. Without indexes, MongoDB must perform a collection scan, i.e. scan every document in a collection, to select those documents that match the query statement. If an appropriate index exists for a query, MongoDB can use the index to limit the number of documents it must inspect.
 
 ### Show indexes
 
@@ -150,20 +151,27 @@ by typing the following command:
 ```
 
 ### Create new index
+MongoDB provides complete support for indexes on any field in a collection of documents. By default, all collections have an index on the `_id `field, and applications and users may add additional indexes to support important queries and operations.
 
-Create index for the `userId` field
+> Why you might want to create indexes - well, because indexes improve the efficiency of read operations by reducing the amount of data that query operations need to process. Please see the [Query Optimization](https://docs.mongodb.com/manual/core/query-optimization/) documentation entry for more details
+
+Create [**single** index](https://docs.mongodb.com/manual/core/index-single/) for the `userId` field
 
 ```
 > db.bookmarks.createIndex( { userId: 1 } )
 ```
 
-> (1 - is sort ascending); see doku for more information
-Doku:
-https://docs.mongodb.com/v3.2/reference/method/db.collection.createIndex/#db.collection.createIndex
-https://docs.mongodb.com/manual/core/index-single/
-https://docs.mongodb.com/manual/indexes/
+Create [**unique** index](https://docs.mongodb.com/manual/core/index-unique/) for the `location` field:
 
-After that show the newly created index:
+```
+> db.bookmarks.createIndex( { location: 1 }, { unique: true } );
+```
+
+> (1 - is sort ascending); see doku for more information
+
+
+
+After that show the newly created indexes:
 ```
 > db.bookmarks.getIndexes()
 
@@ -182,22 +190,6 @@ After that show the newly created index:
                         "userId" : 1
                 },
                 "name" : "userId_1",
-                "ns" : "codingpedia-bookmarks.bookmarks"
-        }
-]
-```
-
-Create unique index:
-```
-> db.bookmarks.getIndexes()
-
-[
-        {
-                "v" : 1,
-                "key" : {
-                        "_id" : 1
-                },
-                "name" : "_id_",
                 "ns" : "codingpedia-bookmarks.bookmarks"
         },
         {
