@@ -16,7 +16,7 @@ url: http://www.codingpedia.org
 # See the example
 menu:
   - title: 'Bookmarks'
-    url: 'https://bookmarks.codingpedia.org/'
+    url: 'https://www.codingmarks.org/'
   - title: 'About'
     url: '/about/'
   - title: 'Tags'
