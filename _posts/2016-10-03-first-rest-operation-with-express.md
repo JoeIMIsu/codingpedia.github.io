@@ -10,7 +10,7 @@ tags: [codingpedia bookmarks, beginner, nodejs, expressjs, tutorial]
 ---
 
 In the previous blog post, [Kick starting a project with Express Generator]({% post_url 2016-10-01-kickstarting-a-project-with-express-generator}),
-I had setup a started the backend project with Express Generator[^1] to support _bookmarks.codingpedia.org_. In this one I will try to implement
+I had setup a started the backend project with Express Generator[^1] to support _www.codingmarks.org_. In this one I will try to implement
 a simple GET method that will deliver mocked bookmarks.
 
 [^1]: <https://expressjs.com/en/starter/generator.html>

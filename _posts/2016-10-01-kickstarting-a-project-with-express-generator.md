@@ -10,7 +10,7 @@ tags: [codingpedia bookmarks, beginner, nodejs, expressjs, expressjs generator, 
 ---
 
 As today I am going to start working on a project to enhance my bookmarks handling experience that will run at
-_bookmarks.codingpedia.org_. I intend to make a learning experience out of it and build it with components of MEAN[^1] stack with Angular 2, as this is quite new to me and make a learning
+_www.codingmarks.org_. I intend to make a learning experience out of it and build it with components of MEAN[^1] stack with Angular 2, as this is quite new to me and make a learning
 new to me. I have always believed that hands-on is the best was to learn something new.
 
 [^1]: <http://mean.io/>
