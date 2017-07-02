@@ -9,23 +9,24 @@ categories: [mongodb]
 tags: [codingmarks, mongodb]
 ---
 
-Public and private [codingmarks](https://www.codingmarks.org/) are persisted in a MongoDB Server](https://docs.mongodb.com/manual/) to persist private and
-public bookmarks. Very often I find myself in the situation, where I need to modify or look for something in the mongo database.
- What do I do then? Well I google it, and most likely I am pointed to the right entry in the [Mongo manual](https://docs.mongodb.com/manual/).
- With this post I try to consolidate the commands I usually use so that I have one place to come to later...
+The [codingmarks](https://www.codingmarks.org/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/).
+ Very often I find myself in the situation, where I need to modify or look for something in the mongo database.
+ Experience has taught me that interacting with a system via shell commands helps me understand it better,
+ and sort of brings me closer to it. Ok, so how to find the right mongo shell command? Well, I google for it of course, and most likely I am pointed to the right entry in the [Mongo manual](https://docs.mongodb.com/manual/). In this post I try to consolidate the commands I usually use,
+  so that I have only one [codingmark](https://www.codingmarks.org/search?q=codingpedia mongo shell commands) to look for...
 
-> Experience has taught me that interacting with a system via shell commands helps you at understand it better,
-and sort of brings you closer to it.
+> .
 
   {% include source-code-codingpedia-bookmarks.html %}
 
-> As a prerequisite one should have a Mongo Server instance running.
-
 <!--more-->
+
+* TOC
+{:toc}
 
 ## Start the mongo shell
 
-To start the mongo shell and connect to the MongoDB instance running on localhost with default port, change to the MongoDB installation directory:
+To start the mongo shell and connect to the MongoDB instance running on **localhost** with **default port**(which is 27017), change to the MongoDB installation directory:
 
 ``` bash
 > cd <mongodb installation dir>
@@ -38,7 +39,7 @@ and then type `./bin/mongo` to start mongo
 
 MongoDB does not enable access control by default. This might be fine for development, but for a production environment it is highly recommended
 to employ [authorization](https://docs.mongodb.com/manual/core/authorization/). Please see the **Create database and users** section of
-the [MongoDB Setup For Production](https://github.com/Codingpedia/codingmarks-api/wiki/MongoDB-Setup-for-Production) wiki page for commands related to this.
+the [MongoDB Setup For Production](https://github.com/Codingpedia/codingmarks-api/wiki/MongoDB-Setup-for-Production) wiki page for commands related to that.
 
 ## Quit the mongo shell
 
@@ -50,7 +51,7 @@ You can type the following command to exit the mongo shell:
 
 ## Display database and collections
 
-Once in, you can print a list of all available database on the server via `show dbs`:
+You can print a list of all available database on the server via `show dbs` command:
 
 ``` bash
 > show dbs
@@ -66,7 +67,7 @@ To switch to the _codingpedia-bookmarks_ database, use the `use` command:
 switched to db codingpedia-bookmarks
 ```
 
-Then print a list of all collections of the current database
+Print the list of all collections of the current database:
 
 ``` bash
 > show collections
@@ -98,23 +99,43 @@ Response
 ```
 ### Find documents with filter
 
-Filter by one attribute (here filter by location):
+Filter by one attribute (here filter by **location**):
 ```
 > db.bookmarks.find({location: "http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/"});
 { "_id" : ObjectId("5948ab65ce8e01b7e330b330"), "name" : "Git magic", "location" : "http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/", "tags" : [ "free-programming-books-zh", "版本控制" ], "description" : "", "descriptionHtml" : "<p></p>", "createdAt" : ISODate("2017-06-20T04:58:13.192Z"), "shared" : true, "userId" : "2d6f6cb5-44f3-441d-a0c5-ec9afea98d39", "language" : "zh" }
 ```
 
+Check out the [find documention](https://docs.mongodb.com/manual/reference/method/db.collection.find/) for more details.
+
+### [Query an array](https://docs.mongodb.com/manual/tutorial/query-arrays/)
+
+#### Match an array
+
+Query for all documents where the field `tags` value is an array with exactly three elements, "angular", "angular-cli" and "dev-tools", in the specified order:   
 ```
-> db.bookmarks.find(more attributes maybe with tag)
+> db.bookmarks.find( { tags: ["angular", "angular-cli", "dev-tools"] } )
 ```
 
-Check out the [find documention](https://docs.mongodb.com/manual/reference/method/db.collection.find/) for more details.
+If, instead, we wish to find an array that contains all the elements "angular", "angular-cli" and "dev-tools", without regard to order or other elements in the array,
+ we use the `$all` operator:
+```
+> db.bookmarks.find( { tags: { $all: ["angular", "angular-cli", "dev-tools"] } } )
+```
+
+#### Query an Array for an Element
+
+To query if the array field contains at least one element with the specified value, use the filter `{ <field>: <value> }` where `<value>` is the element value.
+
+The following example queries for all documents where `tags` is an array that contains the string "angular" as one of its elements:
+```
+> db.bookmarks.find({tags:"angular-cli"})
+```
 
 ### Sort results
 
-You can apply `sort()`` to the cursor before retrieving any documents from the database.
+You can apply `sort()` to the cursor before retrieving any documents from the database.
 
-Example Sort documents by `updatedAt` Date (`1` for ascending and `-1` for descending):
+For example let's sort documents by `updatedAt` Date (`1` for ascending and `-1` for descending):
 docs
 
 ``` bash
@@ -136,7 +157,8 @@ Removes all bookmarks for user, identified by userId
 > db.bookmarks.remove({userId:"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39"});
 WriteResult({ "nRemoved" : 4 })
 ```
-Remove with attributes (all but shared true):
+
+Remove with attributes (all but where `shared` is not set to true):
 ```bash
 > db.bookmarks.remove({shared:{$ne:true}})
 WriteResult({ "nRemoved" : 9 })
@@ -146,14 +168,14 @@ For more details see the [db.collection.remove() documentation](https://docs.mon
 
 ## Update documents
 
-## Update field value
+### Update field value
 Update `githubURL` for document with the given `location` (we know that is unique):
 
 ```
 > db.bookmarks.update({ location : "http://www.codingpedia.org/" }, { githubURL : "https://github.com/Codingpedia/codingpedia.github.io"} );
 ```
 
-## Add new field
+### Add new field
 
 Add new `language` field and set it to `en` for all documents:
 ```
