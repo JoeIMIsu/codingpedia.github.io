@@ -1,22 +1,25 @@
 ---
 layout: post
-title: Practical MongoDB commands every developer should know
-description: "Practical MongoDB commands every developer should know, or I should know..."
+title: Practical MongoDB shell commands every developer should know
+description: "Practical MongoDB shell commands every developer should know, or I at least should know..."
 author: ama
-permalink: /ama/practical-mongodb-console-commands
-published: false
+permalink: /ama/practical-mongodb-shell-commands-every-developer-should-know
+published: true
 categories: [mongodb]
-tags: [codingpedia bookmarks, mongodb]
+tags: [codingmarks, mongodb]
 ---
 
-The bookmarks from [www.codingmarks.org](https://www.codingmarks.org/) are persisted in a [MongoDB Server](https://docs.mongodb.com/manual/), currently version 3.2.
- Very often I find in the situation where I need to modify or look for something in the mongo database. Experience has taught me that doing it
-  via the shell is one the best ways and it brings you sort of closer to the system. So, in this blog post I will list some of the practical MongoDB shell commands I use,
-   as a reminder for later use and maybe somebody else can take advantage of it.
+Public and private [codingmarks](https://www.codingmarks.org/) are persisted in a MongoDB Server](https://docs.mongodb.com/manual/) to persist private and
+public bookmarks. Very often I find myself in the situation, where I need to modify or look for something in the mongo database.
+ What do I do then? Well I google it, and most likely I am pointed to the right entry in the [Mongo manual](https://docs.mongodb.com/manual/).
+ With this post I try to consolidate the commands I usually use so that I have one place to come to later...
+
+> Experience has taught me that interacting with a system via shell commands helps you at understand it better,
+and sort of brings you closer to it.
 
   {% include source-code-codingpedia-bookmarks.html %}
 
-> As a prerequisite you should have a Mongo Server instance running.
+> As a prerequisite one should have a Mongo Server instance running.
 
 <!--more-->
 
@@ -30,10 +33,12 @@ To start the mongo shell and connect to the MongoDB instance running on localhos
 
 and then type `./bin/mongo` to start mongo
 
-> If you are like me, and hooked on aliases[^1], you might use something like `alias mongo-start-client='~/dev/mongodb/bin/mongo'`.
+> If you are like me, and [hooked on aliases](http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/), you might use something like `alias mongo-start-client='~/dev/mongodb/bin/mongo'`.
  You can also add `<mongodb installation dir>/bin` to the PATH environment variable and then you can just type `mongo`
 
-[^1]: <http://www.codingpedia.org/ama/a-developers-guide-to-using-aliases/>
+MongoDB does not enable access control by default. This might be fine for development, but for a production environment it is highly recommended
+to employ [authorization](https://docs.mongodb.com/manual/core/authorization/). Please see the **Create database and users** section of
+the [MongoDB Setup For Production](https://github.com/Codingpedia/codingmarks-api/wiki/MongoDB-Setup-for-Production) wiki page for commands related to this.
 
 ## Quit the mongo shell
 
@@ -119,16 +124,57 @@ docs
 
 See [doku](https://docs.mongodb.com/manual/reference/method/cursor.sort/) for more details.
 
-## Delete documents
+## Delete/Remove documents
+
+Remove all documents from collection:
+```bash
+> db.bookmarks.remove()
+```
 
 Removes all bookmarks for user, identified by userId
 ```
 > db.bookmarks.remove({userId:"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39"});
 WriteResult({ "nRemoved" : 4 })
 ```
+Remove with attributes (all but shared true):
+```bash
+> db.bookmarks.remove({shared:{$ne:true}})
+WriteResult({ "nRemoved" : 9 })
+```
+
+For more details see the [db.collection.remove() documentation](https://docs.mongodb.com/manual/reference/method/db.collection.remove/)
+
+## Update documents
+
+## Update field value
+Update `githubURL` for document with the given `location` (we know that is unique):
+
+```
+> db.bookmarks.update({ location : "http://www.codingpedia.org/" }, { githubURL : "https://github.com/Codingpedia/codingpedia.github.io"} );
+```
+
+## Add new field
+
+Add new `language` field and set it to `en` for all documents:
+```
+> db.bookmarks.update({}, {$set: {language: "en"}}, {multi: true});
+```
+
+For more `update` options, like `upsert`, `$unset` etc, please see the [db.collection.update() manual](https://docs.mongodb.com/manual/reference/method/db.collection.update/).
+
+### Rename a field
+To rename a field, call the `$rename` operator with the current name of the field and the new name:
+``` bash
+> db.bookmarks.updateMany({}, { $rename: {"url":"location"} })
+```
+This operation renames the field `url` to `location` for all documents in the collection.
+To see how to rename embedded fields and more see the [documentation for $rename](https://docs.mongodb.com/manual/reference/operator/update/rename/)
+
 
 ## Indexing
-[Indexes](https://docs.mongodb.com/manual/indexes/) support the efficient execution of queries in MongoDB. Without indexes, MongoDB must perform a collection scan, i.e. scan every document in a collection, to select those documents that match the query statement. If an appropriate index exists for a query, MongoDB can use the index to limit the number of documents it must inspect.
+[Indexes](https://docs.mongodb.com/manual/indexes/) support the efficient execution of queries in MongoDB.
+ Without indexes, MongoDB must perform a collection scan, i.e. scan every document in a collection,
+  to select those documents that match the query statement. If an appropriate index exists for a query, MongoDB can use the index to limit the number of documents it must inspect.
 
 ### Show indexes
 
@@ -150,28 +196,28 @@ by typing the following command:
 ]
 ```
 
-### Create new index
-MongoDB provides complete support for indexes on any field in a collection of documents. By default, all collections have an index on the `_id `field, and applications and users may add additional indexes to support important queries and operations.
+> By default, all collections have an index on the `_id `field
+
+### Create index
+MongoDB provides complete support for indexes on any field in a collection of documents. In addition to the index on the `_id`field applications and users may add additional indexes to support important queries and operations.
 
 > Why you might want to create indexes - well, because indexes improve the efficiency of read operations by reducing the amount of data that query operations need to process. Please see the [Query Optimization](https://docs.mongodb.com/manual/core/query-optimization/) documentation entry for more details
 
-Create [**single** index](https://docs.mongodb.com/manual/core/index-single/) for the `userId` field
+Some exaples:
 
+Create [**single** index](https://docs.mongodb.com/manual/core/index-single/) for the `userId` field
 ```
 > db.bookmarks.createIndex( { userId: 1 } )
 ```
 
-Create [**unique** index](https://docs.mongodb.com/manual/core/index-unique/) for the `location` field:
+> Value `1` means the index is sort ascending on the field
 
+Create [**unique** index](https://docs.mongodb.com/manual/core/index-unique/) for the `location` field:
 ```
 > db.bookmarks.createIndex( { location: 1 }, { unique: true } );
 ```
 
-> (1 - is sort ascending); see doku for more information
-
-
-
-After that show the newly created indexes:
+Show the newly created indexes after:
 ```
 > db.bookmarks.getIndexes()
 
@@ -205,12 +251,9 @@ After that show the newly created indexes:
 ]
 ```
 
-
-Verify if index is used for a query with the explain method:
-https://docs.mongodb.com/manual/reference/explain-results/
-
+Verify if index is used for a query with the [explain](https://docs.mongodb.com/manual/reference/explain-results/) method:
 ```
-> db.bookmarks.find({userId:"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39"}).explain("executionStats");
+> db.bookmarks.find({userId:"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39"}).explain("queryPlanner")
 {
 	"queryPlanner" : {
 		"plannerVersion" : 1,
@@ -244,60 +287,6 @@ https://docs.mongodb.com/manual/reference/explain-results/
 		},
 		"rejectedPlans" : [ ]
 	},
-	"executionStats" : {
-		"executionSuccess" : true,
-		"nReturned" : 2714,
-		"executionTimeMillis" : 4,
-		"totalKeysExamined" : 2714,
-		"totalDocsExamined" : 2714,
-		"executionStages" : {
-			"stage" : "FETCH",
-			"nReturned" : 2714,
-			"executionTimeMillisEstimate" : 10,
-			"works" : 2715,
-			"advanced" : 2714,
-			"needTime" : 0,
-			"needYield" : 0,
-			"saveState" : 21,
-			"restoreState" : 21,
-			"isEOF" : 1,
-			"invalidates" : 0,
-			"docsExamined" : 2714,
-			"alreadyHasObj" : 0,
-			"inputStage" : {
-				"stage" : "IXSCAN",
-				"nReturned" : 2714,
-				"executionTimeMillisEstimate" : 10,
-				"works" : 2715,
-				"advanced" : 2714,
-				"needTime" : 0,
-				"needYield" : 0,
-				"saveState" : 21,
-				"restoreState" : 21,
-				"isEOF" : 1,
-				"invalidates" : 0,
-				"keyPattern" : {
-					"userId" : 1
-				},
-				"indexName" : "userId_1",
-				"isMultiKey" : false,
-				"isUnique" : false,
-				"isSparse" : false,
-				"isPartial" : false,
-				"indexVersion" : 1,
-				"direction" : "forward",
-				"indexBounds" : {
-					"userId" : [
-						"[\"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39\", \"2d6f6cb5-44f3-441d-a0c5-ec9afea98d39\"]"
-					]
-				},
-				"keysExamined" : 2714,
-				"dupsTested" : 0,
-				"dupsDropped" : 0,
-				"seenInvalidated" : 0
-			}
-		}
-	},
 	"serverInfo" : {
 		"host" : "adrians-mbp.home",
 		"port" : 27017,
@@ -308,212 +297,18 @@ https://docs.mongodb.com/manual/reference/explain-results/
 }
 ```
 
-See
+### Drop index
 
-REsult:
-
-
-Drop the unique "name" index:
-via name
+We use `db.collection.dropIndex(index)` to drop or remove an index from a collection. Let's drop the unique "name" index from index list shown above.
+To drop the index 'name', we can either use the index name:
 ```
 > db.bookmarks.dropIndex("name_1");
 ```
-or via key
+Or we can use the index specification document (key) `{ "name" : 1 } `:
 ```
 > db.pets.dropIndex( { "name" : 1 } );
 ```
 
-Doku:
-https://docs.mongodb.com/v3.2/tutorial/manage-indexes/
+The more I use MongoDB, probably the bigger this blog post will get.
 
-Update Many
-
-``` bash
-> db.bookmarks.updateMany({}, { $rename: {"url":"location"} })
-2016-10-11T06:31:45.390+0200 E QUERY    [thread1] uncaught exception: WriteError({
-        "index" : 0,
-        "code" : 11000,
-        "errmsg" : "E11000 duplicate key error collection: codingpedia-bookmarks.bookmarks index: url_1 dup key: { : null }",
-        "op" : {
-                "q" : {
-
-                },
-                "u" : {
-                        "$rename" : {
-                                "url" : "location"
-                        }
-                },
-                "multi" : true,
-                "upsert" : false
-        }
-}) :
-undefined
-```
-
-Update - add new field to all entries
-```
-> db.bookmarks.update({}, {$set: {language: "en"}}, {multi: true});
-```
-
-
-After dropping index
-```
-> db.bookmarks.updateMany({}, { $rename: {"url":"location"} })
-{ "acknowledged" : true, "matchedCount" : 9, "modifiedCount" : 8 }
-```
-
-https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/
-
-List all indexes
-https://docs.mongodb.com/v3.2/tutorial/manage-indexes/
-
-```bash
-> db.bookmarks.getIndexes()
-[
-        {
-                "v" : 1,
-                "key" : {
-                        "_id" : 1
-                },
-                "name" : "_id_",
-                "ns" : "codingpedia-bookmarks.bookmarks"
-        },
-        {
-                "v" : 1,
-                "unique" : true,
-                "key" : {
-                        "name" : 1
-                },
-                "name" : "name_1",
-                "ns" : "codingpedia-bookmarks.bookmarks",
-                "background" : true
-        },
-        {
-                "v" : 1,
-                "unique" : true,
-                "key" : {
-                        "url" : 1
-                },
-                "name" : "url_1",
-                "ns" : "codingpedia-bookmarks.bookmarks",
-                "background" : true
-        }
-]
-```
-
-Drop Index
-
-```bash
-> db.bookmarks.dropIndex({"url" : 1})
-{ "nIndexesWas" : 3, "ok" : 1 }
-```
-
-Remove all documents from collection
-```bash
-> db.bookmarks.remove()
-```
-
-Remove with attributes (all but shared true):
-```bash
-> db.bookmarks.remove({shared:{$ne:true}})
-WriteResult({ "nRemoved" : 9 })
-```
-Documentation - https://docs.mongodb.com/v3.2/reference/method/db.collection.remove/
-
-## User management
-
-https://docs.mongodb.com/v3.2/tutorial/enable-authentication/
-https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/
-
-Create mongo admin user:
-``` bash
-> use admin
-switched to db admin
-> db.createUser({user: "admin", pwd: "admin", roles:[{role: "userAdminAnyDatabase", db: "admin"}]})
-Successfully added user: {
-	"user" : "admin",
-	"roles" : [
-		{
-			"role" : "userAdminAnyDatabase",
-			"db" : "admin"
-		}
-	]
-}
-```
-
-https://docs.mongodb.com/manual/reference/built-in-roles/#userAdminAnyDatabase
-
-
-Create new user on "codingpedia-bookmarks"
-``` bash
-> db.dropUser("codingpedia")
-false
-> db.getUsers()
-[ ]
-> db.createUser({user: "codingpedia", pwd: "codingpedia", roles:[{role: "read", db: "user-data"}, {role:"readWrite", db: "codingpedia-bookmarks"}]})
-Successfully added user: {
-	"user" : "codingpedia",
-	"roles" : [
-		{
-			"role" : "read",
-			"db" : "user-data"
-		},
-		{
-			"role" : "readWrite",
-			"db" : "codingpedia-bookmarks"
-		}
-	]
-}
-> db.getUsers()
-[
-	{
-		"_id" : "codingpedia-bookmarks.codingpedia",
-		"user" : "codingpedia",
-		"db" : "codingpedia-bookmarks",
-		"roles" : [
-			{
-				"role" : "read",
-				"db" : "user-data"
-			},
-			{
-				"role" : "readWrite",
-				"db" : "codingpedia-bookmarks"
-			}
-		]
-	}
-]
->
-```
-
-https://docs.mongodb.com/manual/reference/command/connectionStatus/
-
-## Show current user
-
-Use the `connectionStatus`[^1] method to return information about the current connection, specifically the state of the authenticated users and their available permisssions:
-
-[^1]: <https://docs.mongodb.com/manual/reference/command/connectionStatus/>
-
-```
-> db.runCommand({connectionStatus : 1})
-{
-	"authInfo" : {
-		"authenticatedUsers" : [
-			{
-				"user" : "mongo-admin",
-				"db" : "admin"
-			}
-		],
-		"authenticatedUserRoles" : [
-			{
-				"role" : "userAdminAnyDatabase",
-				"db" : "admin"
-			}
-		]
-	},
-	"ok" : 1
-}
-```
-
-
-
-## References
+  {% include source-code-codingpedia-bookmarks.html %}
