@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to get the title of a remote web page using javascript and NodeJS
-description: "This post presents how to use web scraping with Cheerio in a NodeJS backend to retrieve the title of a bookmark added in www.codingmarks.org"
+description: "This post presents how to use web scraping with Cheerio in a NodeJS backend to retrieve the title and the meta description of a bookmark added in www.codingmarks.org"
 author: ama
 permalink: /ama/how-to-get-the-title-of-a-remote-web-page-using-javascript-and-nodejs
 published: true
@@ -68,15 +68,16 @@ var router = express.Router();
 var Bookmark = require('../models/bookmark');
 var MyError = require('../models/error');
 
-/* GET title of bookmark given its url */
 router.get('/scrape', function(req, res, next) {
   if(req.query.url){
     request(req.query.url, function (error, response, body) {
       if (!error && response.statusCode == 200) {
-        var $ = cheerio.load(body);
-        var webpageTitle = $("title").text();
-        var webpage = {
-          title: webpageTitle
+        const $ = cheerio.load(body);
+        const webpageTitle = $("title").text();
+        const metaDescription =  $('meta[name=description]').attr("content");
+        const webpage = {
+          title: webpageTitle,
+          metaDescription: metaDescription
         }
         res.send(webpage);
       }
@@ -92,7 +93,8 @@ If there is no error and we receive an <span class="highlight">HTTP 200 OK statu
 
 > With Cheerio we need to pass in the HTML document.
 
-Once loaded we call the  `text()`[^5] function to get the content of the `title` element and return it in a custom `webpage` object. If I am not satisfied with the title I can edit it manually after.
+Once loaded we call the  `text()`[^5] function to get the content of the `title` element and also identify the meta description content. 
+We return them both in a custom `webpage` object. If I am not satisfied with the title or the description I can edit it manually after.
 
 [^5]: <http://api.jquery.com/text/>
 
