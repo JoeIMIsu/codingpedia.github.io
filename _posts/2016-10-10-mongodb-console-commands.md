@@ -143,6 +143,27 @@ docs
 
 See [doku](https://docs.mongodb.com/manual/reference/method/cursor.sort/) for more details.
 
+### Find all documents with missing field
+
+For example I wanted to find all the documents that don't contain the field `starredBy` yet:
+```bash
+> db.bookmarks.find({ "starredBy" : { "$exists" : false } })
+```
+
+### Find number of elements matching search criteria
+
+For that we need the [db.collection.count()](https://docs.mongodb.com/manual/reference/method/db.collection.count/) operator.
+
+For example to count all the documents in the collection:
+```bash
+> db.bookmarks.count()
+```
+
+To count all the documents missing the ``starredBy`` field as above:
+```bash
+> db.bookmarks.count({ "starredBy" : { "$exists" : false } })
+```
+
 ## Delete/Remove documents
 
 Remove all documents from collection:
@@ -180,6 +201,14 @@ Add new `language` field and set it to `en` for all documents:
 > db.bookmarks.update({}, {$set: {language: "en"}}, {multi: true});
 ```
 
+Add a new field `starredBy` for all the documents where it is missing:
+```
+> db.bookmarks.update(
+    { "starredBy": { "$exists": false } },
+    { "$set": { "starredBy": [] } },
+    { "multi": true }
+)
+```
 For more `update` options, like `upsert`, `$unset` etc, please see the [db.collection.update() manual](https://docs.mongodb.com/manual/reference/method/db.collection.update/).
 
 ### Rename a field
