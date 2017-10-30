@@ -358,6 +358,47 @@ Or we can use the index specification document (key) `{ "name" : 1 } `:
 > db.pets.dropIndex( { "name" : 1 } );
 ```
 
+
+### Create compound index
+
+Drop the <span class="highlight">unique location index</span> and add compound index on <span class="highlight">location and user id</span>:
+
+```
+// drop index
+codingpedia> db.bookmarks.dropIndex("location_1");
+{ "nIndexesWas" : 2, "ok" : 1 }
+
+// create compound unique index
+codingpedia> db.bookmarks.createIndex( { location: 1, userId:1 }, { unique: true } );
+{
+	"createdCollectionAutomatically" : false,
+	"numIndexesBefore" : 1,
+	"numIndexesAfter" : 2,
+	"ok" : 1
+}
+```
+
+## Advanced
+
+### Remove trailing spaces from array entries
+
+Trim the spaces for all the **tags** in the bookmark collection:
+```
+db.bookmarks.find({}).forEach(
+  function(doc){
+    if(doc.tags){
+      print(doc.tags);
+      var trimmedTags = [];
+      doc.tags.forEach(function(tag){
+        trimmedTags.push(tag.trim());
+      });
+
+      db.bookmarks.update({"_id": doc._id}, {"$set":{ "tags":trimmedTags } });
+    }
+  }
+);
+```
+
 The more I use MongoDB, probably the bigger this blog post will get.
 
   {% include source-code-codingpedia-bookmarks.html %}
