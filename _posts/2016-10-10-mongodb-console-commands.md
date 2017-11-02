@@ -361,7 +361,7 @@ Or we can use the index specification document (key) `{ "name" : 1 } `:
 
 ### Create compound index
 
-Drop the <span class="highlight">unique location index</span> and add compound index on <span class="highlight">location and user id</span>:
+Drop the <span class="highlight-yellow">unique location index</span> and add compound index on <span class="highlight-yellow">location and user id</span>:
 
 ```
 // drop index
@@ -377,7 +377,6 @@ codingpedia> db.bookmarks.createIndex( { location: 1, userId:1 }, { unique: true
 	"ok" : 1
 }
 ```
-
 ## Advanced
 
 ### Remove trailing spaces from array entries

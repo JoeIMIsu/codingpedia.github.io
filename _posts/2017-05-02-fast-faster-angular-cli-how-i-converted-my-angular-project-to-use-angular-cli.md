@@ -238,7 +238,7 @@ export class BookmarkService {
 
 ## Speed
 
-I saved the best for last - <span class="highlight">speed of development, speed of building and speed at runtime</span> ( not that in my case, the website was not loading rapidly with Just-In-Time Compilation (~500ms), but Ahead-of-Time Compilation (~280ms) takes it one step further ).
+I saved the best for last - <span class="highlight-yellow">speed of development, speed of building and speed at runtime</span> ( not that in my case, the website was not loading rapidly with Just-In-Time Compilation (~500ms), but Ahead-of-Time Compilation (~280ms) takes it one step further ).
 
 With this I rest my case.
 

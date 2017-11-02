@@ -89,7 +89,7 @@ router.get('/scrape', function(req, res, next) {
 ### What happens?
 
 The URL of the webpage comes as a `url` query parameter under the `/scrape resource. Then the web page with the URL is requested.
-If there is no error and we receive an <span class="highlight">HTTP 200 OK status</span> the body of the response is loaded into cheerio.
+If there is no error and we receive an <span class="highlight-yellow">HTTP 200 OK status</span> the body of the response is loaded into cheerio.
 
 > With Cheerio we need to pass in the HTML document.
 
@@ -103,7 +103,7 @@ If you found this useful, please star it, share it and improve it:
 
 {% include source-code-codingpedia-bookmarks.html %}
 
-> A note on web scraping from Wikipedia - "<span class="highlight">the legality of web scraping varies across the world. In general, web scraping may be against the terms of use of some websites, but the enforceability of these terms is unclear</span>"[^6].
+> A note on web scraping from Wikipedia - "<span class="highlight-yellow">the legality of web scraping varies across the world. In general, web scraping may be against the terms of use of some websites, but the enforceability of these terms is unclear</span>"[^6].
  Since I am using the method to get the title for bookmarking and then reference back the link, Ì think I don't do anything illegal, but be wary...
 
 [^6]: <https://en.wikipedia.org/wiki/Web_scraping#Legal_issues>
