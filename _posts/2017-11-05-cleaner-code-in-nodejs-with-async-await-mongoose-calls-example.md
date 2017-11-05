@@ -4,22 +4,35 @@ title: Cleaner code in NodeJs with async-await - Mongoose calls example
 description: "Example showing migration of Mongoose calls from previously using callbacks to using the new
 async-await feature in NodeJs"
 author: ama
-permalink: /ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example.md
-published: false
-categories: [nodejs]
-tags: [nodejs, mongoose, async-await]
+permalink: /ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example
+published: true
+categories: [javascript, nodejs]
+tags: [javascript, nodejs, mongoose, async-await, codingmarks]
 ---
 
+A lot has been written already about the transition from [callbacks](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) 
+to [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and now to the new 
+`async/await`[^1] feature in ES7.
 
-url commit:
-https://github.com/Codingpedia/codingmarks-api/commit/0c56b456ba3185cbbc0505bcf9cdb33dfb81dbe6
+<p class="note_normal">
+  "The purpose of `async/await` functions is to simplify the behavior of using promises synchronously and to perform some behavior on a group of `Promises`.
+   Just as `Promises` are similar to structured callbacks, `async/await is similar to combining generators and promises."[^1]
+</p>
 
+[^1]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function>
 
-This post presents the configuration snippet from nginx that redirects all request to **https://www.codingmarks.org**:
+In this blog post I will just list what rewriting meant for [CRUD operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+   on [codingmarks](https://www.codingmarks.org). The operations are performend via [Moongoose](http://mongoosejs.com/) in an ExpressJS/NodeJS backend
+    against MongoDB database  . 
+     
+<!--more-->
 
-### Create
+* TOC
+{:toc}     
 
-Before
+## Create
+
+### Before
 ```
 router.post('/:id/bookmarks', keycloak.protect(), function(req, res, next){
   const descriptionHtml = req.body.descriptionHtml ? req.body.descriptionHtml: converter.makeHtml(req.body.description);
@@ -70,7 +83,7 @@ router.post('/:id/bookmarks', keycloak.protect(), function(req, res, next){
 });
 ```
 
-After 
+### After 
 ```
 router.post('/:id/bookmarks', keycloak.protect(), async (req, res) => {
   const descriptionHtml = req.body.descriptionHtml ? req.body.descriptionHtml: converter.makeHtml(req.body.description);
@@ -107,9 +120,9 @@ router.post('/:id/bookmarks', keycloak.protect(), async (req, res) => {
 });
 ```
 
-### Read
+## Read
 
-#### Before
+### Before
 ```
 /* GET bookmarks for user */
 router.get('/:id/bookmarks', keycloak.protect(), function(req, res, next) {
@@ -134,7 +147,7 @@ router.get('/:id/bookmarks', keycloak.protect(), function(req, res, next) {
 });
 ```
 
-#### After
+### After
 ```
 /* GET bookmarks for user */
 router.get('/:id/bookmarks', keycloak.protect(), async (req, res) => {
@@ -155,9 +168,9 @@ router.get('/:id/bookmarks', keycloak.protect(), async (req, res) => {
 });
 ```
 
-### Update
+## Update
 
-#### Before
+### Before
 ```
 /**
  * full UPDATE via PUT - that is the whole document is required and will be updated
@@ -184,7 +197,7 @@ router.put('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req, r
 });
 ```
 
-#### After
+### After
 ```
 /**
  * full UPDATE via PUT - that is the whole document is required and will be updated
@@ -211,9 +224,9 @@ router.put('/:userId/bookmarks/:bookmarkId', keycloak.protect(), async (req, res
 });
 ```
 
-### Delete
+## Delete
 
-#### Before
+### Before
 ```
 /*
 * DELETE bookmark for user
@@ -232,7 +245,7 @@ router.delete('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req
 });
 ```
 
-#### After
+### After
 ```
 /*
 * DELETE bookmark for user`
@@ -250,7 +263,11 @@ router.delete('/:userId/bookmarks/:bookmarkId', keycloak.protect(), async (req, 
     return res.status(500).send(new MyError('Unknown server error', ['Unknown server error when trying to delete bookmark with id ' + req.params.bookmarkId]));
   }
 });
-``
+```
 
+> Note how the code is shorter, easier to read (especially for someone like me, with a Java/JavaEE background) and the error handling is clearer.
+   
+Another cool feature is how to implement multiple parallel requests with `async/await, but that in a coming post...     
+   
 {% include source-code-codingpedia-bookmarks.html %}
 
