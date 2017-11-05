@@ -84,7 +84,8 @@ router.post('/:id/bookmarks', keycloak.protect(), function(req, res, next){
 ```
 
 ### After 
-```
+
+{% highlight javascript %}
 router.post('/:id/bookmarks', keycloak.protect(), async (req, res) => {
   const descriptionHtml = req.body.descriptionHtml ? req.body.descriptionHtml: converter.makeHtml(req.body.description);
 
@@ -118,7 +119,7 @@ router.post('/:id/bookmarks', keycloak.protect(), async (req, res) => {
   }
 
 });
-```
+{% endhighlight %}
 
 ## Read
 
@@ -148,7 +149,8 @@ router.get('/:id/bookmarks', keycloak.protect(), function(req, res, next) {
 ```
 
 ### After
-```
+
+{% highlight javascript %}
 /* GET bookmarks for user */
 router.get('/:id/bookmarks', keycloak.protect(), async (req, res) => {
   try{
@@ -166,7 +168,7 @@ router.get('/:id/bookmarks', keycloak.protect(), async (req, res) => {
     return res.status(500).send(err);
   }
 });
-```
+{% endhighlight %}
 
 ## Update
 
@@ -198,7 +200,8 @@ router.put('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req, r
 ```
 
 ### After
-```
+
+{% highlight javascript %}
 /**
  * full UPDATE via PUT - that is the whole document is required and will be updated
  * the descriptionHtml parameter is only set in backend, if only does not come front-end (might be an API call)
@@ -222,7 +225,7 @@ router.put('/:userId/bookmarks/:bookmarkId', keycloak.protect(), async (req, res
     res.status(500).send(new MyError('Unknown Server Error', ['Unknow server error when updating bookmark for user id ' + req.params.userId + ' and bookmark id '+ req.params.bookmarkId]));
   }
 });
-```
+{% endhighlight %}
 
 ## Delete
 
@@ -246,7 +249,8 @@ router.delete('/:userId/bookmarks/:bookmarkId', keycloak.protect(), function(req
 ```
 
 ### After
-```
+
+{% highlight javascript %}
 /*
 * DELETE bookmark for user`
 */
@@ -263,7 +267,7 @@ router.delete('/:userId/bookmarks/:bookmarkId', keycloak.protect(), async (req, 
     return res.status(500).send(new MyError('Unknown server error', ['Unknown server error when trying to delete bookmark with id ' + req.params.bookmarkId]));
   }
 });
-```
+{% endhighlight %}
 
 > Note how the code is shorter, easier to read (especially for someone like me, with a Java/JavaEE background) and the error handling is clearer.
    
