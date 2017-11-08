@@ -13,7 +13,7 @@ This blog post presents a simple example showing how to insert a document in mon
 
  <p class="note_normal">
     <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" />
-     The code examples are taken from the Free-Programming-Books-Importer, available on <a href="https://github.com/Codingpedia/codingmarks-free-programming-books-importer" target="_blank">Github</a>
+     The code samples are taken from the Free-Programming-Books-Importer project, available on <a href="https://github.com/Codingpedia/codingmarks-free-programming-books-importer" target="_blank">Github</a>
  </p>  
  
 ## Use MongoDB Java Driver
@@ -42,9 +42,10 @@ Get the Mongo database:
 ```java
 MongoDatabase database = mongoClient.getDatabase("codingpedia-bookmarks");
 ```
-> A database is a physical container for collections. Each database gets its own set of files on the file system. A single MongoDB server typically has multiple databases.
+> A database is a physical container for collections. Each database gets its own set of files on the file system.
+ A single MongoDB server typically has multiple databases.
 
-Now we need to select the collection, where we'll be adding our newly created document:
+Now we need to select the collection, where we add our newly created document:
 
 ```java
 MongoCollection<Document> bookmarksCollection = database.getCollection("bookmarks");
@@ -75,7 +76,7 @@ document.append("tags", tags);
 ```
 
 ## Insert the document
-Check if the collection contains already the codingmark based on location, or else add the `document` to the collection
+Check if the collection contains already the codingmark document based on location. Else add the `document` to the collection
 with the help of `insertOne` method:
 ```java
 Document bookmark = bookmarksCollection.find(eq("location", location)).first();
@@ -89,7 +90,8 @@ if(bookmark!=null){
 ```
 
 > A document is a record in a MongoDB collection and the basic unit of data in MongoDB. 
-Documents are analogous to JSON objects but exist in the database in a more type-rich format known as BSON. See [Documents](https://docs.mongodb.com/manual/reference/glossary/).
+Documents are analogous to JSON objects but exist in the database in a more type-rich format known as BSON.
+ See [Documents](https://docs.mongodb.com/manual/reference/glossary/) for more information.
 
  <p class="note_normal">
     <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" />
