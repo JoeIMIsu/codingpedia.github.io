@@ -21,9 +21,9 @@ to [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 
 [^1]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function>
 
-In this blog post I will just list what rewriting meant for [CRUD operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
-   on [codingmarks](https://www.codingmarks.org). The operations are performend via [Moongoose](http://mongoosejs.com/) in an ExpressJS/NodeJS backend
-    against MongoDB database  . 
+In this blog post I present what this code "upgrade" meant for [CRUD operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+   performed on [codingmarks](https://www.codingmarks.org). I use [Moongoose](http://mongoosejs.com/) in an ExpressJS/NodeJS backend
+    to perform the operations against a MongoDB database. 
      
 <!--more-->
 
@@ -269,9 +269,9 @@ router.delete('/:userId/bookmarks/:bookmarkId', keycloak.protect(), async (req, 
 });
 {% endhighlight %}
 
-> Note how the code is shorter, easier to read (especially for someone like me, with a Java/JavaEE background) and the error handling is clearer.
+> Note how the code has become shorter, easier to read (especially for someone like me, with a Java/JavaEE background) and the error handling is now much clearer.
    
-Another cool feature is how to implement multiple parallel requests with `async/await, but that in a coming post...     
+Another cool feature of `async/await` is how to easily implement multiple parallel, but that in a coming post...     
    
 {% include source-code-codingpedia-bookmarks.html %}
 
