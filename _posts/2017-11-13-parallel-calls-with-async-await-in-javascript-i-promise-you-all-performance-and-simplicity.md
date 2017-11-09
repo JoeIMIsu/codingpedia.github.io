@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Cleaner code in NodeJs with async-await - Mongoose calls example
-description: "Example showing migration of Mongoose calls from previously using callbacks to using the new
-async-await feature in NodeJs"
+title: Parallel calls with async-await in javascript - I promise you all performance and simplicity
+description: "I was blown away about the peformance gain and simplicity of making parallel calls with the new async-await feature in javascript
+. See the blog post for details"
 author: ama
-permalink: /ama/cleaner-code-in-nodejs-with-async-await-mongoose-calls-example
+permalink: /ama/parallel-calls-with-async-await-in-javascript-i-promise-you-all-performance-and-simplicity
 published: false
 categories: [javascript, nodejs]
 tags: [javascript, nodejs, async-await, typescript]
