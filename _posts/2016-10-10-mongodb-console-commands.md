@@ -15,7 +15,7 @@ The [codingmarks](https://www.codingmarks.org/) are persisted in a [MongoDB Serv
  and sort of brings me closer to it. Ok, so how to find the right mongo shell command? Well, I google for it of course, and most likely I am pointed to the right entry in the [Mongo manual](https://docs.mongodb.com/manual/). In this post I try to consolidate the commands I usually use,
   so that I have only one [codingmark](https://www.codingmarks.org/search?q=codingpedia mongo shell commands) to look for...
 
-  {% include source-code-codingpedia-bookmarks.html %}
+  {% include source-code-codingmarks.html %}
 
 <!--more-->
 
@@ -400,4 +400,4 @@ db.bookmarks.find({}).forEach(
 
 The more I use MongoDB, probably the bigger this blog post will get.
 
-  {% include source-code-codingpedia-bookmarks.html %}
+  {% include source-code-codingmarks.html %}

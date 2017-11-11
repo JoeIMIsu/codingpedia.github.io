@@ -81,6 +81,6 @@ because it forces me to really filter the ones worth adding and to dwell a bit o
 
 I guess this is pretty at the moment. Feel like sharing or improving it?
 
-{% include source-code-codingpedia-bookmarks.html %}
+{% include source-code-codingmarks.html %}
 
 ## References

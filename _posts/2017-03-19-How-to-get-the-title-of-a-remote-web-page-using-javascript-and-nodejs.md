@@ -18,7 +18,7 @@ When I [add a new bookmark](https://youtu.be/bj22xbE5ZiY?t=5m10s) to my bookmark
 [^2]: <https://cheerio.js.org/>
 [^3]: <https://jquery.com/>
 
-{% include source-code-codingpedia-bookmarks.html %}
+{% include source-code-codingmarks.html %}
 
 <!--more-->
 
@@ -101,7 +101,7 @@ We return them both in a custom `webpage` object. If I am not satisfied with the
 
 If you found this useful, please star it, share it and improve it:
 
-{% include source-code-codingpedia-bookmarks.html %}
+{% include source-code-codingmarks.html %}
 
 > A note on web scraping from Wikipedia - "<span class="highlight-yellow">the legality of web scraping varies across the world. In general, web scraping may be against the terms of use of some websites, but the enforceability of these terms is unclear</span>"[^6].
  Since I am using the method to get the title for bookmarking and then reference back the link, Ì think I don't do anything illegal, but be wary...

@@ -273,5 +273,5 @@ router.delete('/:userId/bookmarks/:bookmarkId', keycloak.protect(), async (req, 
    
 Another cool feature of `async/await` is how to easily implement multiple parallel, but that in a coming post...     
    
-{% include source-code-codingpedia-bookmarks.html %}
+{% include source-code-codingmarks.html %}
 

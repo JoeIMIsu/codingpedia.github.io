@@ -16,7 +16,7 @@ When managing my coding bookmarks via [www.codingmarks.org](https://www.codingma
 [^3]: <https://angular.io/>
 [^4]: <https://nodejs.org/en/>
 
-{% include source-code-codingpedia-bookmarks.html %}
+{% include source-code-codingmarks.html %}
 
 <!--more-->
 
@@ -193,6 +193,6 @@ Works like a charm.
 
 If you found this useful, please star it, share it and improve it:
 
-{% include source-code-codingpedia-bookmarks.html %}
+{% include source-code-codingmarks.html %}
 
 ## References

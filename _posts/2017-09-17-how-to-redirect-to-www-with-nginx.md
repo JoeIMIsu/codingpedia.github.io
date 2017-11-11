@@ -34,5 +34,5 @@ server {
 
 Lots of other good Nginx resources can be found if you search for the **nginx** tag on **codingmarks**: [https://www.codingmarks.org?q=[nginx]](https://www.codingmarks.org?q=[nginx])
 
-{% include source-code-codingpedia-bookmarks.html %}
+{% include source-code-codingmarks.html %}
 
