@@ -95,7 +95,7 @@ To get the Git revision information the plugin looks for a `<scm><plugins>` entr
 
 ```xml
 <scm>
-    <url>https://github.com/PodcastpediaOrg/podcastpedia</url>
+    <url>https://github.com/Codingpedia/podcastpedia</url>
     <connection>scm:git:git://github.com:PodcastpediaOrg/podcastpedia.git</connection>
     <developerConnection>scm:git:git@github.com:PodcastpediaOrg/podcastpedia.git</developerConnection>
 </scm>

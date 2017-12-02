@@ -108,7 +108,7 @@ tags:
 </p>
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="1_Set_up_the_infrastructure">1. Set up the infrastructure</span>
@@ -179,7 +179,7 @@ To install these plugins issue the following command in the console in the root 
 }</pre>
 
 <p class="alert_note" style="text-align: justify;">
-  There are all development dependencies as I only use this project to generate a CSS file. For libraries used in production you would add those under the &#8220;dependencies&#8221; element in your <em>package.json</em> file. The <em><a title="https://npmjs.org/doc/json.html" href="https://npmjs.org/doc/json.html" target="_blank">package.json</a></em> file holds variaous metadata relevant to the project and is contained in all <a title="http://en.wikipedia.org/wiki/Npm_%28software%29" href="http://en.wikipedia.org/wiki/Npm_%28software%29" target="_blank">npm</a> packages. You can create the <em>package.json</em> file according to the <a title="https://www.npmjs.org/doc/json.html" href="https://www.npmjs.org/doc/json.html" target="_blank">docs</a> or by issueing <code>npm init</code> in the root of of your project. You can find the complete package.json file for this project on <a href="https://github.com/PodcastpediaOrg/podcastpedia">GitHub</a>.
+  There are all development dependencies as I only use this project to generate a CSS file. For libraries used in production you would add those under the &#8220;dependencies&#8221; element in your <em>package.json</em> file. The <em><a title="https://npmjs.org/doc/json.html" href="https://npmjs.org/doc/json.html" target="_blank">package.json</a></em> file holds variaous metadata relevant to the project and is contained in all <a title="http://en.wikipedia.org/wiki/Npm_%28software%29" href="http://en.wikipedia.org/wiki/Npm_%28software%29" target="_blank">npm</a> packages. You can create the <em>package.json</em> file according to the <a title="https://www.npmjs.org/doc/json.html" href="https://www.npmjs.org/doc/json.html" target="_blank">docs</a> or by issueing <code>npm init</code> in the root of of your project. You can find the complete package.json file for this project on <a href="https://github.com/Codingpedia/podcastpedia">GitHub</a>.
 </p>
 
 <p style="text-align: justify;">
@@ -287,7 +287,7 @@ To run the task I have to execute `gulp sass` on the command line in the root fo
 Well, that&#8217;s it &#8211; few lines of code for pretty good functionality. I am looking forward to dwelve more and find out what Gulp can do&#8230; Your comments, suggestions and code contributions are very welcomed.
 
 <p class="note_normal">
-  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/PodcastpediaOrg/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
+  <img style="float: left; width: 35px; height: 29px; margin-right: 10px;" src="{{site.url}}/wp-content/uploads/2015/06/Octocat-smaller.png" alt="Octocat" /> Source code for this post is available on <a href="https://github.com/Codingpedia/podcastpedia">Github</a> - <b>podcastpedia.org</b> is an open source project.
 </p>
 
 ## <span id="3_Resources">3. Resources</span>
