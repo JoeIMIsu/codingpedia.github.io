@@ -12,9 +12,9 @@ tags: [maven, java, javaee]
 Did you find yourself one or several times, copying your favourite java project, renaming it, removing files, keeping
 some best practice classes and so on, all that to create new projects similar to it? This is time consuming and can 
 be very annoying... Well, you might wanna consider instead creating a maven archetype out of the template project
- and use to create new projects. Not only this will increase your productivity, but it help you look with a more 
- critical view on your "best of breed" project. which is what I will show you in this blog post. In this blog post
-  I will show how to create a maven archetype based on an existing project and how to generate a new project from this template.  
+ and use to create new projects. Not only this will save you time, but it will make you look with a more 
+ critical view on your "best of breed" project. In this blog post I will show how to create a maven archetype based
+  on an existing project and how to generate a new project from this template.  
 
 <!--more-->
 
