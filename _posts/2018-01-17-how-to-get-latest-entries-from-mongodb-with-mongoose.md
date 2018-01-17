@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to get latest entries from MongoDB with Mongoose
+title: How to get latest entries from MongoDB collection with Mongoose
 description: "Example on how to retrieve the latest entries from a MongoDB collection. Two possibilities are presented."
 author: ama
-permalink: /ama/how-to-get-latest-entries-from-mongodb-with-mongoose
+permalink: /ama/how-to-get-latest-entries-from-mongodb-collection-with-mongoose
 published: true
 categories: [mongodb]
 tags: [codingmarks, mongodb, mongoose, nodejs]
