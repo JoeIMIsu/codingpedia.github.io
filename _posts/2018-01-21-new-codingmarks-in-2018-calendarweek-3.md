@@ -1,19 +1,20 @@
 ---
 layout: post
-title: New codingmarks in 2018 so far. Keywords - git, nodejs, design-patterns, mongodb etc.
-description: "New codingmarks added in calendar week. Keywords: clean-code, debugging, design-patterns, expressjs, git, http, mongodb, mongoose, nodejs, npm, rxjs, ssh, testing, typescript, unit-testing, utils and vscode"
+title: New codingmarks added in 2018 so far. Keywords - git, nodejs, design-patterns, mongodb etc.
+description: "New codingmarks added this year so far. They were marked with the following keywords:
+ clean-code, debugging, design-patterns, expressjs, git, http, mongodb, mongoose, nodejs, npm, rxjs, ssh, testing, typescript, unit-testing, utils and vscode"
 author: ama
-permalink: /ama/new-codingmarks-in-2018-calendarweek-3-nodejs-mongodb-git-design-patterns-etc
+permalink: /ama/new-codingmarks-in-2018-calendarweek-3-nodejs-mongodb-git-design-patterns-and-more
 published: true
 categories: [codingmarks]
 tags: [codingmarks]
 ---
-New codingmarks added in calendar week. Keywords: clean-code, debugging, design-patterns, expressjs, git, http, mongodb, mongoose, nodejs, npm, rxjs, ssh, testing, typescript, unit-testing, utils and vscode"
-
-<!--more-->
+New [codingmarks](https://www.codingmarks.org) added this year so far. They were marked with the following keywords: 
 
 * TOC
 {:toc} 
+
+<!--more-->
 
 ## clean-code 
 
