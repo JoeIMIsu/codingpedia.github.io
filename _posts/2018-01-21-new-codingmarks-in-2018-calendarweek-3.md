@@ -43,7 +43,7 @@ The **single responsibility principle** is a computer programming principle that
 
 [Writing Your F.I.R.S.T Unit Tests - DZone Java](https://dzone.com/articles/writing-your-first-unit-tests)
 
-  * :calendar: published on: 2017-03-17
+  * <i class="fa-calendar"></i> published on: 2017-03-17
   * tags: [testing](../tags/testing.md), [unit-testing](../tags/unit-testing.md), [clean-code](../tags/clean-code.md)
 
 When writing unit tests in Java, stick to FIRST. Your tests should be fast, independent, repeatable, self-validating, and timely (unless you're using TDD).
@@ -91,9 +91,9 @@ The **single responsibility principle** is a computer programming principle that
 
 [RESTful API In Node & Express With TypeScript & MongoDB - YouTube](https://www.youtube.com/watch?v=XqbBv1i9Yhc)
 
-  * :calendar: published on: 2017-07-03
+  * <i class="fa-calendar"></i> published on: 2017-07-03
   * tags: [nodejs](../tags/nodejs.md), [expressjs](../tags/expressjs.md), [mongodb](../tags/mongodb.md), [mongoose](../tags/mongoose.md), [typescript](../tags/typescript.md)
-  * :octocat: [github url](https://github.com/iamclaytonray/tes)
+  * <i class="fa-github"></i> [github url](https://github.com/iamclaytonray/tes)
 
 This video covers writing a RESTful JSON API using Node, Express, MongoDB, Mongoose, and TypeScript. My other Node...
 
@@ -127,7 +127,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 [Helmet](https://helmetjs.github.io/docs/)
 
   * tags: [nodejs](../tags/nodejs.md), [http](../tags/http.md)
-  * :octocat: [github url](https://github.com/helmetjs/helmet)
+  * <i class="fa-github"></i> [github url](https://github.com/helmetjs/helmet)
 
 Helmet helps you secure your Express.js apps by setting various HTTP headers. It's not a silver bullet, but it can help!
 
@@ -151,22 +151,22 @@ db = mongoose.connect('localhost', 'nextrak');
 [MongoDB Node.js Driver](http://mongodb.github.io/node-mongodb-native/)
 
   * tags: [mongodb](../tags/mongodb.md), [nodejs](../tags/nodejs.md)
-  * :octocat: [github url](https://github.com/mongodb/node-mongodb-native/)
+  * <i class="fa-github"></i> [github url](https://github.com/mongodb/node-mongodb-native/)
 
 The official MongoDB Node.js driver provides both callback-based and Promise-based interaction with MongoDB, allowing applications to take full advantage of the new features in ES6. 
 
 [RESTful API In Node & Express With TypeScript & MongoDB - YouTube](https://www.youtube.com/watch?v=XqbBv1i9Yhc)
 
-  * :calendar: published on: 2017-07-03
+  * <i class="fa-calendar"></i> published on: 2017-07-03
   * tags: [nodejs](../tags/nodejs.md), [expressjs](../tags/expressjs.md), [mongodb](../tags/mongodb.md), [mongoose](../tags/mongoose.md), [typescript](../tags/typescript.md)
-  * :octocat: [github url](https://github.com/iamclaytonray/tes)
+  * <i class="fa-github"></i> [github url](https://github.com/iamclaytonray/tes)
 
 This video covers writing a RESTful JSON API using Node, Express, MongoDB, Mongoose, and TypeScript. My other Node...
 
 [GitHub - szokodiakos/typegoose: Typegoose - Define Mongoose models using TypeScript classes.](https://github.com/szokodiakos/typegoose)
 
   * tags: [mongoose](../tags/mongoose.md), [mongodb](../tags/mongodb.md), [nodejs](../tags/nodejs.md)
-  * :octocat: [github url](https://github.com/szokodiakos/typegoose)
+  * <i class="fa-github"></i> [github url](https://github.com/szokodiakos/typegoose)
 
 typegoose - Typegoose - Define Mongoose models using TypeScript classes.
 
@@ -189,9 +189,9 @@ db = mongoose.connect('localhost', 'nextrak');
 
 [RESTful API In Node & Express With TypeScript & MongoDB - YouTube](https://www.youtube.com/watch?v=XqbBv1i9Yhc)
 
-  * :calendar: published on: 2017-07-03
+  * <i class="fa-calendar"></i> published on: 2017-07-03
   * tags: [nodejs](../tags/nodejs.md), [expressjs](../tags/expressjs.md), [mongodb](../tags/mongodb.md), [mongoose](../tags/mongoose.md), [typescript](../tags/typescript.md)
-  * :octocat: [github url](https://github.com/iamclaytonray/tes)
+  * <i class="fa-github"></i> [github url](https://github.com/iamclaytonray/tes)
 
 This video covers writing a RESTful JSON API using Node, Express, MongoDB, Mongoose, and TypeScript. My other Node...
 
@@ -216,7 +216,7 @@ leads to error `TS2450: Left-hand side of assignment expression cannot be a cons
 [GitHub - szokodiakos/typegoose: Typegoose - Define Mongoose models using TypeScript classes.](https://github.com/szokodiakos/typegoose)
 
   * tags: [mongoose](../tags/mongoose.md), [mongodb](../tags/mongodb.md), [nodejs](../tags/nodejs.md)
-  * :octocat: [github url](https://github.com/szokodiakos/typegoose)
+  * <i class="fa-github"></i> [github url](https://github.com/szokodiakos/typegoose)
 
 typegoose - Typegoose - Define Mongoose models using TypeScript classes.
 
@@ -240,22 +240,22 @@ db = mongoose.connect('localhost', 'nextrak');
 [MongoDB Node.js Driver](http://mongodb.github.io/node-mongodb-native/)
 
   * tags: [mongodb](../tags/mongodb.md), [nodejs](../tags/nodejs.md)
-  * :octocat: [github url](https://github.com/mongodb/node-mongodb-native/)
+  * <i class="fa-github"></i> [github url](https://github.com/mongodb/node-mongodb-native/)
 
 The official MongoDB Node.js driver provides both callback-based and Promise-based interaction with MongoDB, allowing applications to take full advantage of the new features in ES6. 
 
 [RESTful API In Node & Express With TypeScript & MongoDB - YouTube](https://www.youtube.com/watch?v=XqbBv1i9Yhc)
 
-  * :calendar: published on: 2017-07-03
+  * <i class="fa-calendar"></i> published on: 2017-07-03
   * tags: [nodejs](../tags/nodejs.md), [expressjs](../tags/expressjs.md), [mongodb](../tags/mongodb.md), [mongoose](../tags/mongoose.md), [typescript](../tags/typescript.md)
-  * :octocat: [github url](https://github.com/iamclaytonray/tes)
+  * <i class="fa-github"></i> [github url](https://github.com/iamclaytonray/tes)
 
 This video covers writing a RESTful JSON API using Node, Express, MongoDB, Mongoose, and TypeScript. My other Node...
 
 [Helmet](https://helmetjs.github.io/docs/)
 
   * tags: [nodejs](../tags/nodejs.md), [http](../tags/http.md)
-  * :octocat: [github url](https://github.com/helmetjs/helmet)
+  * <i class="fa-github"></i> [github url](https://github.com/helmetjs/helmet)
 
 Helmet helps you secure your Express.js apps by setting various HTTP headers. It's not a silver bullet, but it can help!
 
@@ -268,7 +268,7 @@ The Visual Studio Code editor includes Node.js debugging support. Set breakpoint
 [GitHub - szokodiakos/typegoose: Typegoose - Define Mongoose models using TypeScript classes.](https://github.com/szokodiakos/typegoose)
 
   * tags: [mongoose](../tags/mongoose.md), [mongodb](../tags/mongodb.md), [nodejs](../tags/nodejs.md)
-  * :octocat: [github url](https://github.com/szokodiakos/typegoose)
+  * <i class="fa-github"></i> [github url](https://github.com/szokodiakos/typegoose)
 
 typegoose - Typegoose - Define Mongoose models using TypeScript classes.
 
@@ -321,7 +321,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 
 [Writing Your F.I.R.S.T Unit Tests - DZone Java](https://dzone.com/articles/writing-your-first-unit-tests)
 
-  * :calendar: published on: 2017-03-17
+  * <i class="fa-calendar"></i> published on: 2017-03-17
   * tags: [testing](../tags/testing.md), [unit-testing](../tags/unit-testing.md), [clean-code](../tags/clean-code.md)
 
 When writing unit tests in Java, stick to FIRST. Your tests should be fast, independent, repeatable, self-validating, and timely (unless you're using TDD).
@@ -331,9 +331,9 @@ When writing unit tests in Java, stick to FIRST. Your tests should be fast, inde
 
 [RESTful API In Node & Express With TypeScript & MongoDB - YouTube](https://www.youtube.com/watch?v=XqbBv1i9Yhc)
 
-  * :calendar: published on: 2017-07-03
+  * <i class="fa-calendar"></i> published on: 2017-07-03
   * tags: [nodejs](../tags/nodejs.md), [expressjs](../tags/expressjs.md), [mongodb](../tags/mongodb.md), [mongoose](../tags/mongoose.md), [typescript](../tags/typescript.md)
-  * :octocat: [github url](https://github.com/iamclaytonray/tes)
+  * <i class="fa-github"></i> [github url](https://github.com/iamclaytonray/tes)
 
 This video covers writing a RESTful JSON API using Node, Express, MongoDB, Mongoose, and TypeScript. My other Node...
 
@@ -366,7 +366,7 @@ These guidelines are **mainly meant for contributors to the TypeScript project**
 
 [Writing Your F.I.R.S.T Unit Tests - DZone Java](https://dzone.com/articles/writing-your-first-unit-tests)
 
-  * :calendar: published on: 2017-03-17
+  * <i class="fa-calendar"></i> published on: 2017-03-17
   * tags: [testing](../tags/testing.md), [unit-testing](../tags/unit-testing.md), [clean-code](../tags/clean-code.md)
 
 When writing unit tests in Java, stick to FIRST. Your tests should be fast, independent, repeatable, self-validating, and timely (unless you're using TDD).
