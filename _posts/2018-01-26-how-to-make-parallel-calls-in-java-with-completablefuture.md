@@ -1,15 +1,27 @@
 ---
 layout: post
-title: How to make parallel calls in Java with CompletableFuture
-description: "This blog post presents how to make parallel calls in Java with CompletableFuture. 
-It makes asynchronous calls, sort of like the async await and promise.all pattern..."
+title: How to make parallel calls in Java with CompletableFuture example
+description: "This blog post presents an example about how to make parallel calls in Java with CompletableFuture in an 
+asynchronous fashion. It resembles somehow the parallel calls pattern one can achieve in JavaScript with async-await and Promise.all"
 author: ama
-permalink: /ama/how-to-make-parallel-calls-in-java-with-completablefuture
-published: false
+permalink: /ama/how-to-make-parallel-calls-in-java-with-completablefuture-example
+published: true
 categories: [java]
-tags: [java, async]
+tags: [java, javaee, async]
 ---
 
+Some time ago I wrote how elegant and rapid is to [make parallel calls in NodeJS with async-await and Promise.all
+capabilities](http://www.codingpedia.org/ama/parallel-calls-with-async-await-in-javascript-i-promise-you-all-performance-and-simplicity). 
+Well, it turns out in Java is just as elegant and succinct with the help of [CompletableFuture](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html)
+which was introduced in Java 8. To demonstrate that let's imagine that we need to retrieve ToDos from a REST service, given their Ids. Of course
+we could iterate through the list of Ids and sequentially call the web service, but it's much more performant to do it in parallel 
+with asynchronous calls.
+
+<!--more-->
+
+Here is the piece of code that might do just that:
+
+  
 ```java
 import org.codingpedia.example;
 
@@ -45,9 +57,9 @@ public class ParallelCallsDemoService {
         CompletableFuture<ToDo> future = CompletableFuture.supplyAsync(new Supplier<ToDo>() {
             @Override
             public ToDo get() {
-                final ToDo timeSeriesForRegister = restApiClient.getTimeSeries(id);
+                final ToDo toDo = restApiClient.getToDo(id);
 
-                return timeSeriesForRegister;
+                return toDo;
             }
         });
 
@@ -57,5 +69,12 @@ public class ParallelCallsDemoService {
 }
 ```
 
+**Notes:**
+
+* the `supplyAsync` method takes a [`Supplier`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html)
+ which contains the code we want to execute asynchronously - in our case this is where the REST call takes place...
+* we fire all the rest calls and we collect all the `futures` in a list
+* in the end we collect all the results with the help of the `join()` method - this returns the value of the CompletableFuture
+when complete, or throws an (unchecked) exception if completed exceptionally. 
 
 
