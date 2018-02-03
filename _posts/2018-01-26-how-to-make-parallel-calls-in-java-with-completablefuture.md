@@ -13,8 +13,8 @@ tags: [java, javaee, async]
 Some time ago I wrote how elegant and rapid is to [make parallel calls in NodeJS with async-await and Promise.all
 capabilities](http://www.codingpedia.org/ama/parallel-calls-with-async-await-in-javascript-i-promise-you-all-performance-and-simplicity). 
 Well, it turns out in Java is just as elegant and succinct with the help of [CompletableFuture](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html)
-which was introduced in Java 8. To demonstrate that let's imagine that we need to retrieve ToDos from a REST service, given their Ids. Of course
-we could iterate through the list of Ids and sequentially call the web service, but it's much more performant to do it in parallel 
+which was introduced in Java 8. To demonstrate that let's imagine that you need to retrieve a list of ToDos from a REST service, given their Ids. Of course
+you could iterate through the list of Ids and sequentially call the web service, but it's much more performant to do it in parallel 
 with asynchronous calls.
 
 <!--more-->
@@ -72,9 +72,9 @@ public class ParallelCallsDemoService {
 **Notes:**
 
 * the `supplyAsync` method takes a [`Supplier`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html)
- which contains the code we want to execute asynchronously - in our case this is where the REST call takes place...
-* we fire all the rest calls and we collect all the `futures` in a list
-* in the end we collect all the results with the help of the `join()` method - this returns the value of the CompletableFuture
+ which contains the code you want to execute asynchronously - in this case this is where the REST call takes place...
+* you fire all the rest calls and you collect all the `futures` in a list
+* in the end you collect all the results with the help of the `join()` method - this returns the value of the CompletableFuture
 when complete, or throws an (unchecked) exception if completed exceptionally. 
 
 
