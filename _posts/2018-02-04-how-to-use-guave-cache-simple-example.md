@@ -1,10 +1,10 @@
 ---
 layout: post
-title: A simple Java cache example with Guava
+title: A Java cache example with Guava
 description: "This blog post presents an elegant solution to implement a Java cache with Guava. We imagine a scenario
  where we call a REST service, whose response values don't change very often"
 author: ama
-permalink: /ama/a-simple-java-cache-example-with-guava
+permalink: /ama/java-cache-example-with-guava
 published: true
 categories: [java]
 tags: [java, javaee, caching]
