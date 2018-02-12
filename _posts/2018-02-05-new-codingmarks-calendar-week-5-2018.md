@@ -1,16 +1,15 @@
 ---
 layout: post
-title: New codingmarks added in the 6th calendar week of 2018
-description: "New codingmarks added in calendar week. Keywords: caching, cheatsheet, coding, cryptography, cvs, debugging, git, java, javascript, job, marketing, nodejs, reactjs, security, sql and writing"
+title: New codingmarks added in the 5th week of 2018
+description: "New codingmarks added in the 5th week of 2018. Keywords: caching, cheatsheet, coding, cryptography, cvs, debugging, git, java, javascript, job, marketing, nodejs, reactjs, security, sql and writing"
 author: ama
-permalink: /ama/new-codingmarks-in-2018-calendarweek-6
+permalink: /ama/new-codingmarks-week-5-2018
 published: true
 categories: [codingmarks]
 tags: [codingmarks]
 ---
 
-
-New [codingmarks](https://www.codingmarks.org) added the previous week. Hot topics include:
+New [codingmarks](https://www.codingmarks.org) added in the 5th week of 2018. Hot topics include:
 
 * TOC
 {:toc} 

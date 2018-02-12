@@ -1,15 +1,15 @@
 ---
 layout: post
-title: New codingmarks added in the 5th calendar week of 2018
+title: New codingmarks added in the 4th calendar week of 2018
 description: "New codingmarks added in the 5th calendar week of 2018. Hot topics this week: angular, async, asynchronous, debugging, dev-tools, jackson, java, javaee, javascript, json, package-manager, postman, regex, rest, turbo and vim"
 author: ama
-permalink: /ama/new-codingmarks-in-2018-calendarweek-5
+permalink: /ama/new-codingmarks-week-4-2018
 published: true
 categories: [codingmarks]
 tags: [codingmarks]
 ---
 
-New [codingmarks](https://www.codingmarks.org) added in the 5th calendar week of 2018. Hot topics this week:
+New [codingmarks](https://www.codingmarks.org) added in the 4th calendar week of 2018. Hot topics this week:
 
 * TOC
 {:toc} 
