@@ -46,8 +46,7 @@ public class GuavaCacheDemoService {
             .build(
                     new CacheLoader<String, ToDo>() {
                         public ToDo load(String id) {
-                               final ToDo toDo = restApiClient.getToDo(id);
-                               
+                               final ToDo toDo = restApiClient.getToDo(id);    
                                return toDo;
                         }
                     }
@@ -74,11 +73,11 @@ public class GuavaCacheDemoService {
   * inside the method's body you would put the **expensive** method - here the REST call
 * to return the value associated with the key in the cache you need to use the `V get(K key) throws ExecutionException` method;
 in our case `toDosCache.get(toDoId)`
-* your ToDos might modified every night - well at the time you want to evict all entries from
+* your ToDos might change every night - then you want to evict all entries from
 the cache by using `Cache.invalidateAll()`
 * Guava caches are local to a single run of your application. They do not store data in files, or on outside servers.
  If this does not fit your needs, consider a tool like [Memcached](http://memcached.org/).
 
 
-I encourage you the read the [Guava Caches Explained Guide](https://github.com/google/guava/wiki/CachesExplained) to learn
+I encourage you to read the [Guava Caches Explained Guide](https://github.com/google/guava/wiki/CachesExplained) to learn
  about other caching capabilities like writing to cache, using other eviction methods, explicit removals and so on. 
