@@ -1,7 +1,10 @@
+
+
+
 ---
 layout: post
 title: New codingmarks added in the 7th week of 2018
-description: "New codingmarks added in the 7th week of 2018. Keywords: cloud, encryption, firewall, phising, security, tools, user-experience, web-development and website-design"
+description: "New codingmarks added in the 7th week of 2018. Keywords: cloud, encryption, firewall, phising, security, tools and user-experience"
 author: ama
 permalink: /ama/new-codingmarks-week-7-2018
 published: true
@@ -138,30 +141,3 @@ Calculate a SHA-256 hash with this free online converter. Additionally create a 
 In web analytics, A/B testing (bucket tests or split-run testing) is a controlled experiment with two variants, A and B. A/B testing is a way to compare two versions of a single variable typically by testing a subject's response to variable A against variable B, and determining which of the two variables is more effective.
 
 <hr>
-
-
-## web-development 
-
-**[AIS Technolabs](https://www.aistechnolabs.com/)**
-
-  * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-14
-  * **tags**: &nbsp; [Web-Development](https://www.codingmarks.org/search?q=[Web-Development]), &nbsp; [Website-Design](https://www.codingmarks.org/search?q=[Website-Design])
-
-AIS Technolabs is an IT consulting company which provides IT services to the clients all over the globe. It is the motto of the company to work for their clients and enhance their trade success by means of their services. Our company has been established 5 years back. We have been offering our services for nearly more than a half decade and are totally aware of all types of areas in which IT solutions can be provided to our customers. We have been working with industries from diverse sectors of a different magnitude from the start-ups to the colossal organizations.
-
-
-<hr>
-
-
-## website-design 
-
-**[AIS Technolabs](https://www.aistechnolabs.com/)**
-
-  * <i class="fa fa-calendar"></i> **published on**: &nbsp;2018-02-14
-  * **tags**: &nbsp; [Web-Development](https://www.codingmarks.org/search?q=[Web-Development]), &nbsp; [Website-Design](https://www.codingmarks.org/search?q=[Website-Design])
-
-AIS Technolabs is an IT consulting company which provides IT services to the clients all over the globe. It is the motto of the company to work for their clients and enhance their trade success by means of their services. Our company has been established 5 years back. We have been offering our services for nearly more than a half decade and are totally aware of all types of areas in which IT solutions can be provided to our customers. We have been working with industries from diverse sectors of a different magnitude from the start-ups to the colossal organizations.
-
-
-<hr>
-
