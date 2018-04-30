@@ -90,7 +90,7 @@ tags:
 </div>
 
 <p style="text-align: justify;">
-  The Cascade Style Sheet (CSS) file of <a title="Podcastpedia.org, knwoledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> had grown to over 2000 lines and it had become hard to manage. New CSS elements used to, most likely, go to the end of the file. Something had to be done&#8230; Well, CSS does have an import option that lets you split your CSS into smaller, more maintainable portions. The only MAJOR drawback is that each time you use <code>@import</code> in CSS it creates another HTTP request. In addition to that, this could have prevented style sheets from being downloaded concurrently. So, what to do? <strong>Ta-da, CSS preprocessors to the rescue.</strong>
+  The Cascade Style Sheet (CSS) file of <a title="Podcastpedia.org, knwoledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> had grown to over 2000 lines and it had become hard to manage. New CSS elements used to, most likely, go to the end of the file. Something had to be done&#8230; Well, CSS does have an import option that lets you split your CSS into smaller, more maintainable portions. The only MAJOR drawback is that each time you use <code>@import</code> in CSS it creates another HTTP request. In addition to that, this could have prevented style sheets from being downloaded concurrently. So, what to do? <strong>Ta-da, CSS preprocessors to the rescue.</strong>
 </p>
 
 <p style="text-align: justify;">
@@ -398,7 +398,7 @@ is compiled to :
 </p>
 
 <p style="text-align: justify;">
-  Well, those are some of the &#8220;sassy&#8221; features I&#8217;ve used so far to style <a title="Podcastpedia, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia</a>, but I am sure there are other goodies left to be discovered and put to use (e.g. <a title="http://sass-lang.com/documentation/file.SASS_CHANGELOG.html#sassbased_functions" href="http://sass-lang.com/documentation/file.SASS_CHANGELOG.html#sassbased_functions" target="_blank">sass-based functions &#8230;</a>) &#8211; maybe you could give me a helping hand and leave a comment regarding this.
+  Well, those are some of the &#8220;sassy&#8221; features I&#8217;ve used so far to style <a title="Podcastpedia, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia</a>, but I am sure there are other goodies left to be discovered and put to use (e.g. <a title="http://sass-lang.com/documentation/file.SASS_CHANGELOG.html#sassbased_functions" href="http://sass-lang.com/documentation/file.SASS_CHANGELOG.html#sassbased_functions" target="_blank">sass-based functions &#8230;</a>) &#8211; maybe you could give me a helping hand and leave a comment regarding this.
 </p>
 
 <h2 style="text-align: justify;">
@@ -406,7 +406,7 @@ is compiled to :
 </h2>
 
 <p style="text-align: justify;">
-  Now that I have everything set in place, it&#8217;s time to generate the CSS file. Initially I wanted to present how I did that in this one post, but since the it got pretty long and the topics can be discussed separately I&#8217;ve decided to move it to a new post. So in the post &#8220;How to use Gulp to generate CSS from Sass(scss)&#8221; (coming next week) you&#8217;ll find out how o generate the CSS file used for <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org.</a>
+  Now that I have everything set in place, it&#8217;s time to generate the CSS file. Initially I wanted to present how I did that in this one post, but since the it got pretty long and the topics can be discussed separately I&#8217;ve decided to move it to a new post. So in the post &#8220;How to use Gulp to generate CSS from Sass(scss)&#8221; (coming next week) you&#8217;ll find out how o generate the CSS file used for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org.</a>
 </p>
 
 <p class="note_normal">
@@ -433,7 +433,7 @@ is compiled to :
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

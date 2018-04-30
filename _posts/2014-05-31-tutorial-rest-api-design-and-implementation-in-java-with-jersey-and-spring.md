@@ -39,7 +39,7 @@ tags:
   - spring
 ---
 <p style="text-align: justify;">
-  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="http://www.podcastpedia.org/podcasting" href="http://www.podcastpedia.org/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
+  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/Codingpedia/podcastpedia/podcasting" href="https://github.com/Codingpedia/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
 </p>
 
 <!--more-->
@@ -294,7 +294,7 @@ tags:
 </h3>
 
 <p style="text-align: justify;">
-  Before we start, let me tell you why I&#8217;ve written this post &#8211; well, my intention is to offer in the future a REST API for <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a>. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like. So, the best way to get to know the technology is to build a prototype with it. That is what I did and what I am presenting here, and I can say that I am pretty damn satisfied with Jersey. Read along to understand why!!!
+  Before we start, let me tell you why I&#8217;ve written this post &#8211; well, my intention is to offer in the future a REST API for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>. Of course I could use <a title="Designing and Implementing RESTful Web Services with Spring" href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring&#8217;s own REST implementation</a>, as I currently do for the AJAX calls, but I wanted also to see how the &#8220;official&#8221; implementation looks like. So, the best way to get to know the technology is to build a prototype with it. That is what I did and what I am presenting here, and I can say that I am pretty damn satisfied with Jersey. Read along to understand why!!!
 </p>
 
 <p class="note_normal" style="text-align: justify;">
@@ -490,7 +490,7 @@ Before I start presenting the design and implementation of the REST API, we need
 </p>
 
 My implementation of the `ResourceConfig` class, ``<p style="text-align: justify;">
-  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="http://www.podcastpedia.org/podcasting" href="http://www.podcastpedia.org/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
+  Looking to REST in Java? Then you&#8217;ve come to the right place, because in the blog post I will present you how to &#8220;beautifully&#8221; design a REST API and also, how to implement it in Java with the Jersey framework. The RESTful API developed in this tutorial will demonstrate a complete <a title="Wikipedia - CRUD" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">Create,_read,_update_and_delete (CRUD)</a> functionality for <a title="https://github.com/Codingpedia/podcastpedia/podcasting" href="https://github.com/Codingpedia/podcastpedia/podcasting" target="_blank">podcast</a> resources stored in a MySql database.
 </p>
 
 My implementation of the `ResourceConfig` class,`` registers application resources, filters, exception mappers and feature :
@@ -738,7 +738,7 @@ and translates into the following JSON representation, which is actually the de 
 <pre><code class="json">{
     	"id":1,
     	"title":"Quarks & Co - zum Mitnehmen-modified",
-    	"linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/1/Quarks-Co-zum-Mitnehmen",
+    	"linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/podcasts/1/Quarks-Co-zum-Mitnehmen",
     	"feed":"http://podcast.wdr.de/quarks.xml",
     	"description":"Quarks & Co: Das Wissenschaftsmagazin",
     	"insertionDate":"2014-05-30T10:26:12.00+0200"
@@ -1756,7 +1756,7 @@ Here are some great resources from people that understand better the matter:
 </h2>
 
 <p class="note_normal" style="text-align: justify;">
-  Well, that&#8217;s it. I have to congratulate you, if you&#8217;ve come so far, but I hope you could learn something from this tutorial about REST, like designing a REST API, implementing a REST API in Java, testing a REST API and much more. If you did, I&#8217;d be very grateful if you helped it spread by leaving a comment or sharing it on Twitter, Google+ or Facebook. Thank you! Don&#8217;t forget also to check out <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> &#8211; you&#8217;ll find for sure interesting podcasts and episodes. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="http://www.podcastpedia.org/how_can_i_help" target="_blank">your support.</a>
+  Well, that&#8217;s it. I have to congratulate you, if you&#8217;ve come so far, but I hope you could learn something from this tutorial about REST, like designing a REST API, implementing a REST API in Java, testing a REST API and much more. If you did, I&#8217;d be very grateful if you helped it spread by leaving a comment or sharing it on Twitter, Google+ or Facebook. Thank you! Don&#8217;t forget also to check out <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> &#8211; you&#8217;ll find for sure interesting podcasts and episodes. We are grateful for <a title="Podcastpedia.org - how can I contribute" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help" target="_blank">your support.</a>
 </p>
 
 ## <span id="Resources">Resources</span>
@@ -1801,7 +1801,7 @@ Here are some great resources from people that understand better the matter:
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

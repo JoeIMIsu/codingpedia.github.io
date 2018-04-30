@@ -175,7 +175,7 @@ git-SHA-1: 434553639c95d
 Created-By: Apache Maven 3.3.3
 Build-Jdk: 1.8.0_65
 Specification-Version: 1.2.0
-Implementation-URL: http://www.podcastpedia.org
+Implementation-URL: https://github.com/Codingpedia/podcastpedia
 ```
 
 ## Read from the MANIFEST file

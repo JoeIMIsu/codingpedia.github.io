@@ -113,7 +113,7 @@ tags:
 ## <span id="Scenario">Scenario</span>
 
 <p style="text-align: justify;">
-  On Podcastpedia.org&#8217;s <a title="Podcastpedia.org, subtmit podcast" href="http://www.podcastpedia.org/how_can_i_help/add_podcast" target="_blank">Submit podcast</a> page, we encourage our visitors and podcast producers to submit their podcasts to be included in our podcast directory. Once a podcast is submitted, an automatic email will be generated to notify me (adrianmatei [AT] gmail DOT com ) and the Podcastpedia personnel ( contact [AT] podcastpedia DOT org) about it.
+  On Podcastpedia.org&#8217;s <a title="Podcastpedia.org, subtmit podcast" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help/add_podcast" target="_blank">Submit podcast</a> page, we encourage our visitors and podcast producers to submit their podcasts to be included in our podcast directory. Once a podcast is submitted, an automatic email will be generated to notify me (adrianmatei [AT] gmail DOT com ) and the Podcastpedia personnel ( contact [AT] podcastpedia DOT org) about it.
 </p>
 
 <p style="text-align: justify;">
@@ -372,7 +372,7 @@ Let&#8217;s see how everything is configured in the application context:
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

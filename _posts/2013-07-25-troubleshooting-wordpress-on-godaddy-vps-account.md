@@ -90,7 +90,3 @@ I also had to recompile Apache with _EasyApache_ and check MySql options from _E
 </p>
 
 Lucky number four &#8211; installation was successful, but as you can see I am still using the default WordPress theme and didn&#8217;t have enough time to edit anything as I have a plane to catch in two hours. But I promise to come back soon with an &#8220;About us&#8221; page and more coding related posts&#8230;
-
-<p style="text-align: justify;">
-  If you liked this, please show your support by following us and <a title="Podcastpedia.org how can I help" href="http://www.podcastpedia.org/how_can_i_help" target="_blank">joining us</a> on <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org/" target="_blank">Podcastpedia.org</a><br /> We promise to only share high quality podcasts and episodes.
-</p>

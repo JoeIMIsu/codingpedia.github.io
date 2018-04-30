@@ -36,7 +36,7 @@ tags:
   - scss
 ---
 <p style="text-align: justify;">
-  Since the source code for <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> is now open <a title="https://github.com/podcastpedia/podcastpedia-web" href="https://github.com/podcastpedia/podcastpedia-web" target="_blank">on GitHub</a> for everyone to have look at and contribute to, I might as well add a ribbon on the website celebrating that. After a short research on the web, I stepped over Simon Whitaker&#8217;s project <strong><a style="color: #4183c4;" href="https://github.com/simonwhitaker/github-fork-ribbon-css">github-fork-ribbon-css</a> </strong>which I could easily integrate in  the website:
+  Since the source code for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> is now open <a title="https://github.com/podcastpedia/podcastpedia-web" href="https://github.com/podcastpedia/podcastpedia-web" target="_blank">on GitHub</a> for everyone to have look at and contribute to, I might as well add a ribbon on the website celebrating that. After a short research on the web, I stepped over Simon Whitaker&#8217;s project <strong><a style="color: #4183c4;" href="https://github.com/simonwhitaker/github-fork-ribbon-css">github-fork-ribbon-css</a> </strong>which I could easily integrate in  the website:
 </p>
 
 <p style="text-align: justify;">
@@ -227,7 +227,7 @@ Well, it cannot get simpler than that&#8230; So thanks again <a title="https://g
     </p>
 
     <div id="author_details" style="text-align: justify;">
-      Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+      Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
     </div>
 
     <div id="follow_social" style="clear: both;">

@@ -250,7 +250,7 @@ curl http://localhost:8888/demo-rest-jersey-spring/podcasts/1
 <podcast>
    <id>1</id>
    <title>- The Naked Scientists Podcast - Stripping Down Science</title>
-   <linkOnPodcastpedia>http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science</linkOnPodcastpedia>
+   <linkOnPodcastpedia>https://github.com/Codingpedia/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science</linkOnPodcastpedia>
    <feed>feed_placeholder</feed>
    <description>The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.</description>
    <insertionDate>2014-10-29T10:46:02.00+0100</insertionDate>
@@ -280,7 +280,7 @@ curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/
 {
   "id": 1,
   "title": "- The Naked Scientists Podcast - Stripping Down Science",
-  "linkOnPodcastpedia": "http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science",
+  "linkOnPodcastpedia": "https://github.com/Codingpedia/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science",
   "feed": "feed_placeholder",
   "description": "The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home.",
   "insertionDate": "2014-10-29T10:46:02.00+0100"
@@ -307,7 +307,7 @@ curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/
         "feed": "feed_placeholder",
         "id": 1,
         "insertionDate": "2014-10-29T10:46:02.00+0100",
-        "linkOnPodcastpedia": "http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science",
+        "linkOnPodcastpedia": "https://github.com/Codingpedia/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science",
         "title": "- The Naked Scientists Podcast - Stripping Down Science"
     },
     {
@@ -316,7 +316,7 @@ curl -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spring/
         "id": 2,
         "insert
         ionDate": "2014-10-29T10:46:13.00+0100",
-        "linkOnPodcastpedia": "http://www.podcastpedia.org/quarks",
+        "linkOnPodcastpedia": "https://github.com/Codingpedia/podcastpedia/quarks",
         "title": "Quarks & Co - zum Mitnehmen"
     }
 ]
@@ -414,7 +414,7 @@ Content-Length: 0
 **Request**
 
 ```bash
-curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science-new-title2","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
+curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science-new-title2","linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
 ```
 
 **Response**
@@ -440,7 +440,7 @@ Connection: close
 **Request**
 
 ```bash
-curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
+curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
 ```
 
 **Response**
@@ -464,7 +464,7 @@ A new podcast has been created AT THE LOCATION you specified
 **Request**
 
 ```bash
-curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"http://www.podcastpedia.org/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
+curl -i -X POST -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/ -d '{"title":"- The Naked Scientists Podcast - Stripping Down Science","linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/podcasts/792/-The-Naked-Scientists-Podcast-Stripping-Down-Science","feed":"feed_placeholder","description":"The Naked Scientists flagship science show brings you a lighthearted look at the latest scientific breakthroughs, interviews with the world top scientists, answers to your science questions and science experiments to try at home."}'
 ```
 
 **Response**
@@ -488,7 +488,7 @@ Content-Length: 300
 **Request**
 
 ```bash
-curl -i -X PUT -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2,"title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"http://www.podcastpedia.org/quarks","feed":"http://podcast.wdr.de/quarks.xml","description":"Quarks & Co: Das Wissenschaftsmagazin"}'
+curl -i -X PUT -H "Content-Type:application/json" http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2,"title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/quarks","feed":"http://podcast.wdr.de/quarks.xml","description":"Quarks & Co: Das Wissenschaftsmagazin"}'
 ```
 
 **Response**
@@ -541,7 +541,7 @@ curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spri
     "feed": "http://podcast.wdr.de/quarks.xml",
     "id": 1,
     "insertionDate": "2014-06-05T22:35:34.00+0200",
-    "linkOnPodcastpedia": "http://www.podcastpedia.org/quarks",
+    "linkOnPodcastpedia": "https://github.com/Codingpedia/podcastpedia/quarks",
     "title": "Quarks & Co - zum Mitnehmen"
 }
 ```
@@ -577,14 +577,14 @@ curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spri
         "feed": "http://podcast.wdr.de/quarks.xml",
         "id": 1,
         "insertionDate": "2014-06-05T22:35:34.00+0200",
-        "linkOnPodcastpedia": "http://www.podcastpedia.org/quarks",
+        "linkOnPodcastpedia": "https://github.com/Codingpedia/podcastpedia/quarks",
         "title": "Quarks & Co - zum Mitnehmen"
     },
     {
         "feed": "http://www.dayintechhistory.com/feed/podcast-2",
         "id": 2,
         "insertionDate": "2014-06-05T22:35:34.00+0200",
-        "linkOnPodcastpedia": "http://www.podcastpedia.org/podcasts/766/Day-in-Tech-History",
+        "linkOnPodcastpedia": "https://github.com/Codingpedia/podcastpedia/podcasts/766/Day-in-Tech-History",
         "title": "Day in Tech History"
     }
 ]
@@ -597,7 +597,7 @@ curl -v -H "Accept:application/json" http://localhost:8888/demo-rest-jersey-spri
 **Request**
 
 ```bash
-curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"http://www.podcastpedia.org/quarks","feed":"http://podcast.wdr.de/quarks.xml"}'
+curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/quarks","feed":"http://podcast.wdr.de/quarks.xml"}'
 ```
 
 **Response**
@@ -624,7 +624,7 @@ curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-res
 **Request**
 
 ```bash
-$ curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"http://www.podcastpedia.org/quarks","feed":"http://podcast.wdr.de/quarks.xml", "description":"Quarks & Co: Das Wissenschaftsmagazin"}'
+$ curl -v -H "Content-Type:application/json" -X PUT http://localhost:8888/demo-rest-jersey-spring/podcasts/2 -d '{"id":2, "title":"Quarks & Co - zum Mitnehmen","linkOnPodcastpedia":"https://github.com/Codingpedia/podcastpedia/quarks","feed":"http://podcast.wdr.de/quarks.xml", "description":"Quarks & Co: Das Wissenschaftsmagazin"}'
 ```
 
 **Response**
@@ -779,7 +779,7 @@ curl -v http://localhost:8888/demo-rest-jersey-spring/podcasts/2 | python -m jso
 **Request**
 
 ```bash
-curl -v --data-urlencode "title=Day in Tech History" --data-urlencode "linkOnPodcastpedia=http://www.podcastpedia.org/podcasts/766/Day-in-Tech-History" --data-urlencode "feed=http://www.dayintechhistory.com/feed/podcast"
+curl -v --data-urlencode "title=Day in Tech History" --data-urlencode "linkOnPodcastpedia=https://github.com/Codingpedia/podcastpedia/podcasts/766/Day-in-Tech-History" --data-urlencode "feed=http://www.dayintechhistory.com/feed/podcast"
 ```
 
 **Response**
@@ -821,7 +821,7 @@ A new podcast/resource has been created at /demo-rest-jersey-spring/podcasts/nul
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

@@ -68,11 +68,11 @@ tags:
     </ul>
   </div>
 
-  <br /> We use currently for <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org </a>a MySQL database and because we&#8217;ve recently gone <a title="PodcastpediaOrg on GitHub" href="https://github.com/Codingpedia/podcastpedia" target="_blank">open source on GitHub</a>, we&#8217;ve created a <a title="https://github.com/podcastpedia/podcastpedia-sql" href="https://github.com/Codingpedia/podcastpedia/blob/master/README.md" target="_blank">README.md to explain the setup of the database</a>. The content of that file is basically reproduced here, as &#8220;back-up&#8221;, for future reference and why not?, it might also serve others in the mean time.
+  <br /> We use currently for <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org </a>a MySQL database and because we&#8217;ve recently gone <a title="PodcastpediaOrg on GitHub" href="https://github.com/Codingpedia/podcastpedia" target="_blank">open source on GitHub</a>, we&#8217;ve created a <a title="https://github.com/podcastpedia/podcastpedia-sql" href="https://github.com/Codingpedia/podcastpedia/blob/master/README.md" target="_blank">README.md to explain the setup of the database</a>. The content of that file is basically reproduced here, as &#8220;back-up&#8221;, for future reference and why not?, it might also serve others in the mean time.
 </p>
 
 <p class="note_normal" style="text-align: justify;">
-  <strong>Note:</strong> Although the steps presented here refer to the database backing <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a>, they should be valid for any MySQL database you might want to setup either in Linux or Windows.<!--more-->
+  <strong>Note:</strong> Although the steps presented here refer to the database backing <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a>, they should be valid for any MySQL database you might want to setup either in Linux or Windows.<!--more-->
 </p>
 
 ### <span id="1_Install_MySql_55_and_above"><a class="anchor" href="https://github.com/podcastpedia/podcastpedia-sql/blob/master/README.md#install-mysql-55-and-above" name="user-content-install-mysql-55-and-above"></a>1. Install MySql 5.5 and above</span>
@@ -95,7 +95,7 @@ tags:
             For Windows place the configuration file where the MySQL server is installed &#8211; the <a href="https://github.com/podcastpedia/podcastpedia-sql/blob/master/_prepare_database_for_development/my.ini">my.ini</a> file from above is an example used on a Windows 7 machine
           </li>
           <li style="text-align: justify;">
-            For linux you need to use .cnf files. You can see in this blog post &#8211;<a href="http://www.codingpedia.org/ama/optimizing-mysql-server-settings/">Optimizing MySQL server settings</a> &#8211; how the MySQL database is configured in production for <a href="http://www.podcastpedia.org/">Podcastpedia.org</a>
+            For linux you need to use .cnf files. You can see in this blog post &#8211;<a href="http://www.codingpedia.org/ama/optimizing-mysql-server-settings/">Optimizing MySQL server settings</a> &#8211; how the MySQL database is configured in production for <a href="https://github.com/Codingpedia/podcastpedia/">Podcastpedia.org</a>
           </li>
         </ul>
       </li>
@@ -263,7 +263,7 @@ The pcmDB database will be than saved into the single file _pcmdb-backup-2014.06
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

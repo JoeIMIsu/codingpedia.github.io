@@ -62,7 +62,7 @@ tags:
 ## <span id="The_challenge">The challenge</span>
 
 <p style="text-align: justify;">
-  I have been getting complaints from people who were trying to <a title="Suggest podcast to Podcastpedia.org" href="http://www.podcastpedia.org/how_can_i_help/add_podcast" target="_blank">suggest a podcast</a> to <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org, </a>and that for a good reason. They were getting a page with the following message:
+  I have been getting complaints from people who were trying to <a title="Suggest podcast to Podcastpedia.org" href="https://github.com/Codingpedia/podcastpedia/how_can_i_help/add_podcast" target="_blank">suggest a podcast</a> to <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org, </a>and that for a good reason. They were getting a page with the following message:
 </p>
 
 <pre class="lang:default decode:true" title="Unknow error message">"Unknown error. Please inform us about it with the Error indication form."</pre>
@@ -164,7 +164,7 @@ Well, that&#8217;s it. I hope you could learn something from this as I did.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">

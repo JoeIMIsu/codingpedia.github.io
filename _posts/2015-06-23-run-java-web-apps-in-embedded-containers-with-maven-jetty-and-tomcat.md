@@ -29,7 +29,7 @@ tags:
   - tomcat
 ---
 <p style="text-align: justify;">
-  While developing java web applications is very practical to have quick feedback from a &#8220;real&#8221; environment. In this post I&#8217;ll explore how to run a java web application with Maven in an embedded container be it Jetty or Tomcat.  I&#8217;ll show how I have configured them for the development of <a title="https://github.com/Codingpedia/podcastpedia" href="https://github.com/Codingpedia/podcastpedia" target="_blank">podcastpedia</a> project backing the <a title="Podcastpedia, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> website.
+  While developing java web applications is very practical to have quick feedback from a &#8220;real&#8221; environment. In this post I&#8217;ll explore how to run a java web application with Maven in an embedded container be it Jetty or Tomcat.  I&#8217;ll show how I have configured them for the development of <a title="https://github.com/Codingpedia/podcastpedia" href="https://github.com/Codingpedia/podcastpedia" target="_blank">podcastpedia</a> project backing the <a title="Podcastpedia, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> website.
 </p>
 
 <p style="text-align: justify;">
@@ -257,7 +257,7 @@ In context.xml there are defined the database and email resources.
   </p>
 
   <div id="author_details" style="text-align: justify;">
-    Creator of <a title="Podcastpedia.org, knowledge to go" href="http://www.podcastpedia.org" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
+    Creator of <a title="Podcastpedia.org, knowledge to go" href="https://github.com/Codingpedia/podcastpedia" target="_blank">Podcastpedia.org</a> and <a title="Codingpedia, sharing coding knowledge" href="http://www.codingpedia.org" target="_blank">Codingpedia.org</a>, computer science engineer, husband, father, curious and passionate about science, computers, software, education, economics, social equity, philosophy - but these are just outside labels and not that important, deep inside we are all just consciousness, right?
   </div>
 
   <div id="follow_social" style="clear: both;">
