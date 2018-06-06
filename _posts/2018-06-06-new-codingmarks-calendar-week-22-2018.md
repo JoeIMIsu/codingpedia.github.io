@@ -1,7 +1,7 @@
 ---
 layout: post
-title: New codingmarks added in the 22th week of 2018
-description: "New codingmarks added in the 22th week of 2018. Keywords: architecture, cryptography, email, glossary, java, javascript, pki, publish-subscribe, rfc, security, web and x509"
+title: New codingmarks added in the 22nd week of 2018
+description: "New codingmarks added in the 22nd week of 2018. Keywords: architecture, cryptography, email, glossary, java, javascript, pki, publish-subscribe, rfc, security, web and x509"
 author: ama
 permalink: /ama/new-codingmarks-week-22-2018
 published: true
