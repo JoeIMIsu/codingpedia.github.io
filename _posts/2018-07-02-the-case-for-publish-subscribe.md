@@ -46,8 +46,8 @@ The benefits are the solving of the previously mentioned points:
 - **decoupling**: the publisher is not aware anymore of consuming clients
 - **asynchronous consumption (offline support)**: subscribers might consume the messages at a later time
 
-This is no silver bullet for all your architecture needs, you might need tightly coupled systems to guarantee message delivery, 
-just don't forget about it when you are designing your next (enterprise) project.
+This is no silver bullet for all your architecture needs, you might need tightly coupled systems to guarantee message delivery for example. 
+Just don't forget about it, when you are designing your next (enterprise) project.
 
 # References:
 
