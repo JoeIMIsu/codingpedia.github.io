@@ -10,8 +10,8 @@ categories: [architecture]
 tags: [architecture, design-patterns, cloud]
 ---
 
-If you are developing a core platform in an enterprise you might experience the following pains, when core elements
-need to synchronized with consuming clients of the platform.
+So you are developing a core platform for your enterprise. Your platform becomes successful, you have more clients consuming 
+ your services. Some (most) will need some core data synchronized in their systems. You might start experiencing the following pains
 
 ## Pains
 
