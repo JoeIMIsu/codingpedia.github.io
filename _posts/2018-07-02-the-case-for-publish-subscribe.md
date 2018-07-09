@@ -1,10 +1,10 @@
 ---
 layout: post
-title: The case for publish/subscribe in your architecture considerations
+title: The case for publish/subscribe in your software architecture considerations
 description: "The case for publish/subscribe in your architecture considerations: loose coupling and asynchronous
 consumption of messages"
 author: ama
-permalink: /ama/the-case-for-publish-subscribe
+permalink: /ama/the-case-for-publish-subscribe-in-software-architecture
 published: true
 categories: [architecture]
 tags: [architecture, design-patterns, cloud]
