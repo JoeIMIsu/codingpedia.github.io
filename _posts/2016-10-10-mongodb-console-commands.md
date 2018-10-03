@@ -219,6 +219,19 @@ To rename a field, call the `$rename` operator with the current name of the fiel
 This operation renames the field `url` to `location` for all documents in the collection.
 To see how to rename embedded fields and more see the [documentation for $rename](https://docs.mongodb.com/manual/reference/operator/update/rename/)
 
+### Update Many
+
+Update the userId all documents in the collection of a specific user:
+```
+try {
+   db.bookmarks.updateMany(
+      { userId: { $eq: "4204bc10-3dea-4ce7-baf1-44bbbc2eaedf" } },
+      { $set: { userId : "33d22b0e-9474-46b3-9da4-b1fb5d273abc" } }
+   );
+} catch (e) {
+   print(e);
+}
+```
 
 ## Indexing
 [Indexes](https://docs.mongodb.com/manual/indexes/) support the efficient execution of queries in MongoDB.
