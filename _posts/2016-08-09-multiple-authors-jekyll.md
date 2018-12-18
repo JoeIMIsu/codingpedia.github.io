@@ -50,7 +50,7 @@ ama:
   github: amacoder
   social:
     - title: "github"
-      url: "https://github.com/amacoder"
+      url: "https://github.com/adrianmatei-me"
     - title: "linkedin"
       url: "https://www.linkedin.com/in/adrianmatei1983"
     - title: "youtube"
@@ -70,7 +70,7 @@ dexter:
   github: amacoder
   social:
     - title: "github"
-      url: "https://github.com/amacoder"
+      url: "https://github.com/adrianmatei-me"
     - title: "linkedin"
       url: "https://www.linkedin.com/in/adrianmatei1983"
     - title: "youtube"
