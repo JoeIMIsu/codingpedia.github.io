@@ -95,6 +95,20 @@ Response
 { "_id" : ObjectId("57f5dd573fed7e3677b20ca5"), "name" : "windows bookmark", "url" : "windows url", "description" : "some js description", "category" : "git", "tags" : [ "git command", "setup" ], "__v" : 0 }
 
 ```
+
+### Find document by id
+
+Explicit
+```
+> db.test.find({"_id" : ObjectId("5b10cce6b011af410e515e21")}) 
+```
+or shortcut
+
+```
+> db.bookmarks.find(ObjectId("5b10cce6b011af410e515e21"));
+```
+
+
 ### Find documents with filter
 
 Filter by one attribute (here filter by **location**):
