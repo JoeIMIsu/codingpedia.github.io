@@ -1,9 +1,9 @@
 ---
 layout: post
-title: New codingmarks published in week 0 of 2018
+title: New codingmarks published in week 52 of 2018
 description: "New codingmarks published in week 52 of 2018. Keywords: api, api-design, awesome, awesome-list, blog, cli, computer-science, course, distributed-tracing, event-driven-design, git, go, graphql, grpc, hibernate, java, javascript, jpa, jpql, json, json-api, logging, lua, macos, microservices, mysql, nodejs, open-source, osx, postgresql, programming, protocol-buffers, reactjs, relay, rest, rpc, security, social-media, software-development, sql, testing, tools, twirp, vuejs, webhooks, websocket, winston, xml and zipkin"
 author: ama
-permalink: /ama/new-codingmarks-week-0-2018
+permalink: /ama/new-codingmarks-week-52-2018
 published: true
 categories: [codingmarks]
 tags: [codingmarks]
