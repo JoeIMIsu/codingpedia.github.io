@@ -191,6 +191,12 @@ Removes all bookmarks for user, identified by userId
 WriteResult({ "nRemoved" : 4 })
 ```
 
+Remove by id, use `justOne` flag
+```bash
+db.bookmarks.remove({ "_id" : ObjectId("5c4aa6f65b27d00447dd66bd") }, {justOne: true})
+WriteResult({ "nRemoved" : 1 })
+```
+
 Remove with attributes (all but where `shared` is not set to true):
 ```bash
 > db.bookmarks.remove({shared:{$ne:true}})
