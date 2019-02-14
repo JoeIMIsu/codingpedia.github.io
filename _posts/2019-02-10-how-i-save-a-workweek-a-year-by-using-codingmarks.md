@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How I save a workweek a year by using codingmarks
+title: How I save a workweek a year by efficiently managing my codingmarks
 description: "Finding a desired link, you already visited, can be a tedious job and sometimes even frustrating.
  It normally takes 30 seconds or more to look for a link the traditional way, and I do that at least 20 times a day.
   With codingmarks.org it takes about 10 seconds, so I get a time saving of around 20 * 20 / 60 = 6.66 minutes a day.
    Over a year's time this translates to around 40+ hours of saved time."
 author: ama
-permalink: /ama/how-i-save-a-workweek-a-year-by-using-codingmarks
+permalink: /ama/how-i-save-a-workweek-a-year-by-efficiently-managing-my-codingmarks
 published: true
 categories: [codingmarks]
 tags: [codingmarks, efficiency]
