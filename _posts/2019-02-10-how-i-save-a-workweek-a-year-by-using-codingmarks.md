@@ -15,6 +15,7 @@ tags: [codingmarks, efficiency]
 Finding the desired link again can be sometimes a tedious job. It can even become frustrating
 when you don't find it in a reasonable amount of time, because you know it's there somewhere, you visited it before... After a struggle of about
 two or more minutes you finally find it.
+
  ![Nailed it](/images/posts/2019-02-10-saving-time-with-codingmarks/nailed-it.gif)
  
 This time you bookmark it  and then you say to yourself - "_from now on I will be
