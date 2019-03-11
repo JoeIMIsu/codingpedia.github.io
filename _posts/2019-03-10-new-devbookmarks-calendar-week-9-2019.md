@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New #DevBookmarks in february 2019
+title: New dev bookmarks in february 2019
 description: "Lots of exciting #DevBookmarks in february 2019. Keywords: api, architecture, arquillian, aws, bash, bootstrap, chai, cheatsheet, devops, diagram, dns, documentation, domain-driven-design, error-handling, facebook, favicon, ffmpeg, free-programming-books, functional-programming, gif, git, graph, html, html5, integration-testing, java, javascript, junit, jvm, kotlin, latex, linux, markdown, microservices, middleware, mocha, mongodb, monitoring, nginx, nodejs, oidc, online-tools, open-source, openid-connect, osx, pandoc, podcast, promise, reactive, reactive-programming, reactjs, redis, rest, rxjs, shell, spring, spring-boot, spring-cloud-gateway, spring-security, spring-webflux, sql, testing, tools, video-processing, visualization, web, websocket, windows and zuul"
 author: ama
 permalink: /ama/new-devbookmarks-in-february-2019
