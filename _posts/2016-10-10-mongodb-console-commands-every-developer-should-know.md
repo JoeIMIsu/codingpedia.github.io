@@ -96,6 +96,8 @@ Response
 
 ```
 
+> use the `pretty` cursor to display the results in an easy to read format like `db.bookmarks.find().pretty()`
+ 
 ### Find document by id
 
 Explicit
@@ -105,7 +107,7 @@ Explicit
 or shortcut
 
 ```
-> db.bookmarks.find(ObjectId("5b10cce6b011af410e515e21"));
+> db.bookmarks.find(ObjectId("5b10cce6b011af410e515e21")).pretty();
 ```
 
 
