@@ -165,6 +165,11 @@ For example I wanted to find all the documents that don't contain the field `sta
 ```bash
 > db.bookmarks.find({ "starredBy" : { "$exists" : false } })
 ```
+or 
+
+```bash
+> db.bookmarks.find({starredBy: null});
+```
 
 ### Find number of elements matching search criteria
 
